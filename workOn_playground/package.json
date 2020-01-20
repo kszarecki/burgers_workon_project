@@ -1,0 +1,25 @@
+{
+  "name": "templating-node-and-express-apps-with-ejs",
+  "version": "1.0.0",
+  "description": "A sample app for templating with EJS, Node, and Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "build-css": "node-sass --include-path scss public/styles/scss/global.scss  public/styles/css/global.css --output-style compressed",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2"
+  }
+}
