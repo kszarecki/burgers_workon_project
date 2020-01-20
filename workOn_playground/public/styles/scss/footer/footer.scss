@@ -1,52 +1,66 @@
 footer {
-
-    
+    flex-shrink: 0;
     width:100%;
-    height: 300px;
-    background: url("/media/jpg/footer_background.jpg") no-repeat center center / cover;
+    min-height: $footer_height;
+    background: url("/media/jpg/footer_background.jpg") no-repeat left top / cover;
     position: relative;
-    padding-top: 3.625rem;
+    padding-top: 2.5rem;
 
-    @media only screen and (min-width: $breakpoints_md){
-        height: 400px;
-    }
-
-        & > section {
-            padding-right: 2rem;
-            max-width: 960px;
-            margin: 0 auto;
-        }
-
-    .yellow_border {
+    & > .yellow_border {
         position: absolute;
         top: 0;
-        height: 10px;
         width: 100%;
+        height: 10px;
         background: $primary_light_brown;
-        
     }
 
+    & > section {
 
-    
-    h3 {
-        font-family: $font_heading_title;
-        color: $primary_light_brown;
+        width: 90%;
+        max-width: 960px;
+        margin: 0 auto;
+        padding-right: 3.5rem;
+
+        & > h2 {
+            font-family: $font_heading_title;
+            font-size: calc(#{$base_font_size} + 0.8rem);
+            line-height: calc(#{$base_line_height} + 1rem);
+            color: $primary_light_brown;
+            margin-bottom: 1.5rem;
+        }
+
+        & > p {
+            color: $primary_white;
+            font-size: 0.875rem;
+        }
+
+        & > .footer_contact--link {
+            max-width: 155px;
+            cursor: pointer;
+            margin: 0.875rem 0;
+
+            & > p {
+                color: $primary_light_brown;
+                margin-bottom: 0;
+                font-size: 0.875rem;
+            }
+        }
+
+        & > .footer_social_media--container {
+            width: 130px;
+            height: 32px;
+            margin: 1.25rem 0;
+
+            & > img {
+                height: 100%;
+                cursor: pointer;
+            }
+        }
+
+        & > .footer_credentials {
+            font-size: 0.635rem;
+            margin-top: 0.25rem;
+        }
     }
-
-    p {
-        font-family: font_body_bold;
-        color: $primary_white;
-    }
-
-    .container {
-       margin-left: 128px;
-       margin-right: 128px;
-    }
-
-   ul {
-       list-style-type: none;
-       margin-bottom: 32px;
-       padding: 0;
-   }
 
 }

@@ -1,18 +1,32 @@
-//IMPORTS
-
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 
 @import "breakpoints";
 @import "colors";
 @import "typography";
 
-@import "./header/header";
-@import "./footer/footer";
-
-//END IMPORTS
+$footer_height: 290px;
+$primary_box_shadow: 0px 0px 8px rgba($primary_black, 0.15);
+$primary_text_shadow: 4px 4px 8px rgba($primary_black, 0.15);
 
 // GLOBAL STYLES
 
+html, body {
+    height: 100%;
+}
 
+body {
+    height: 100vh;
+
+    font-family: $font_body_bold;
+    font-weight: $font_bold;
+    line-height: calc(#{$base_line_height} + 0.25rem);
+    color: $primary_black;
+}
+
+@import "./header/header";
+@import "./main/main";
+@import "./button/buttons";
+@import "./banner/banner";
+@import "./footer/footer";
 
 // END GLOBAL STYLES

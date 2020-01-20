@@ -1,0 +1,64 @@
+@mixin main_styles {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    min-height: calc(100vh - #{$footer_height});
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -60px;
+        width: 100%;
+        height: 60px;
+
+        @media only screen and (min-width: $breakpoints_xs) {
+            top: -120px;
+            height: 120px;
+        }
+    }
+}
+
+.front_page--container {
+    @include main_styles;
+}
+
+.page--container {
+    @include main_styles;
+    background: $primary_white;
+    box-shadow: $primary_box_shadow;
+
+    &:before {
+        background: $primary_white;
+    }
+
+    & > .main_border {
+        position: absolute;
+        top: -60px;
+        background: $primary_light_brown;
+
+        @media only screen and (min-width: $breakpoints_xs) {
+            top: -120px;
+        }
+    }
+
+    & > .main_border--top {
+        width: 100%;
+        height: 10px;
+    }
+
+    & > .main_border--left,
+    & > .main_border--right {
+        width: 10px;
+        height: 45%;
+        max-height: 230px;
+    }
+
+    & > .main_border--left {
+        left: 0;
+    }
+
+    & > .main_border--right {
+        right: 0;
+    }
+}

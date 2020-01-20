@@ -1,0 +1,45 @@
+.main_button {
+    position: relative;
+    width: 255px;
+    height: 45px;
+    border: none;
+    border-radius: 20px;
+    background: $primary_black;
+
+    font-size: $font_body_bold;
+    font-weight: $font_bold;
+    color: $primary_light_brown;
+
+    padding-left: 104px;
+    cursor: pointer;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 98px;
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background: $primary_brown;
+        box-shadow: inset -4px 4px 8px rgba($primary_black, 0.35);
+        z-index: 1;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 8px;
+        left: 24.5px;
+        width: 48.91px;
+        height: 52px;
+        background: url('/media/svg/button_icon.svg') no-repeat center center / cover;
+        z-index: 2;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

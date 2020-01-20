@@ -15,6 +15,11 @@ app.get('/', (req, res) => {
   res.render('front-page', {  })
 })
 
+app.get('/page-template', (req, res) => {
+
+  res.render('page', {  })
+})
+
 // PORT
 app.listen(8080)
 
