@@ -1,6 +1,5 @@
 @mixin main_styles {
     width: 100%;
-    max-width: 960px;
     margin: 0 auto;
     min-height: calc(100vh - #{$footer_height});
     position: relative;
@@ -25,40 +24,47 @@
 
 .page--container {
     @include main_styles;
-    background: $primary_white;
-    box-shadow: $primary_box_shadow;
 
-    &:before {
+    & > .page_overlay--container {
+        max-width: 960px;
+        @include main_styles;
+
         background: $primary_white;
-    }
+        box-shadow: $primary_box_shadow;
 
-    & > .main_border {
-        position: absolute;
-        top: -60px;
-        background: $primary_light_brown;
-
-        @media only screen and (min-width: $breakpoints_xs) {
-            top: -120px;
+        &:before {
+            background: $primary_white;
         }
-    }
 
-    & > .main_border--top {
-        width: 100%;
-        height: 10px;
-    }
+        & > .main_border {
+            position: absolute;
+            top: -60px;
+            background: $primary_light_brown;
 
-    & > .main_border--left,
-    & > .main_border--right {
-        width: 10px;
-        height: 45%;
-        max-height: 230px;
-    }
+            @media only screen and (min-width: $breakpoints_xs) {
+                top: -120px;
+            }
+        }
 
-    & > .main_border--left {
-        left: 0;
-    }
+        & > .main_border--top {
+            width: 100%;
+            height: 10px;
+        }
 
-    & > .main_border--right {
-        right: 0;
+        & > .main_border--left,
+        & > .main_border--right {
+            width: 10px;
+            height: 45%;
+            max-height: 230px;
+        }
+
+        & > .main_border--left {
+            left: 0;
+        }
+
+        & > .main_border--right {
+            right: 0;
+        }
+
     }
 }

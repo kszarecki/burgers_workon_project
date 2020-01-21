@@ -1,55 +1,75 @@
-.burger_maker--banner {
+@mixin burger_maker_border_top_styles {
+    position: absolute;
+    top: 0;
     width: 100%;
-    height: 180px;
+    height: 10px;
+    background: $primary_light_brown;
+}
+
+@mixin burger_maker_banner_styles($url, $min_height, $max_height) {
+
+    width: 100%;
+    height: $min_height;
     position: relative;
-    background: url('/media/png/burger_maker_banner.png') no-repeat center center / cover;
+    background: url($url) no-repeat center center / cover;
 
     @media only screen and (min-width: $breakpoints_xs) {
-        height: 240px;
+        height: $max_height;
+    }
+
+}
+
+@mixin burger_maker_container_styles {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.burger_maker--banner {
+
+    @include burger_maker_banner_styles('/media/png/burger_maker_banner.png', 200px, 280px);
+
+    @media only screen and (min-width: $breakpoints_md) {
+        @include burger_maker_banner_styles('/media/jpg/burger_maker_banner_desktop.jpg', 280px, 350px);
     }
 
     & > .burger_maker_border--top {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 10px;
-        background: $primary_light_brown;
+        @include burger_maker_border_top_styles;
     }
 
     & > .burger_maker_banner--container {
-        position: relative;
-        width: 90%;
-        height: 100%;
-        max-width: 960px;
-        margin: 0 auto;
+        @include burger_maker_container_styles;
 
         & > img {
-            position: absolute;
-            top: calc(50% - 12.5px);
-            transform: translateY(-50%);
-            right: 0;
-            width: 90%;
-            max-width: 600px;
-            min-width: 275px;
-            height: auto;
-            z-index: 1;
-            opacity: 0.65;
+            width: 100%;
+            max-width: 650px;
+            align-self: flex-start;
+            margin-bottom: 0.5rem;
+
+            @media only screen and (min-width: $breakpoints_xs) {
+                margin-bottom: 1.25rem;
+            }
+        }
+
+        & > h2 {
+            font-family: $font_body_bold;
+            font-weight: $font_bold;
+            color: $primary_white;
+            margin: 1.25rem 0;
+            font-size: calc(#{$base_font_size} * 2.5);
+            align-self: flex-end;
+            display: none;
 
             @media only screen and (min-width: $breakpoints_md) {
-                top: 50%;
+                margin-right: 4rem;
+                display: inherit;
             }
         }
 
         & > button {
-            position: absolute;
-            top: calc(50% + 20px);
-            transform: translateY(-50%);
-            z-index: 2;
-
-            @media only screen and (min-width: $breakpoints_md) {
-                top: 50%;
-            }
+            margin: 1.25rem auto 0 auto;
         }
     }
-
 }
