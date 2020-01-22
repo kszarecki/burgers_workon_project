@@ -1,0 +1,170 @@
+.burger_list_item--container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto 6.5rem auto;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 0 0.25rem;
+
+    @media only screen and (min-width: $breakpoints_sm) {
+        flex-flow: row nowrap;
+        align-items: flex-start;
+
+        &:nth-child(odd) {
+            flex-flow: row-reverse nowrap;
+        }
+    }
+
+    &:nth-child(odd) > .burger_list_item--info > p.burger_list_item--price {
+        text-align: right!important;
+    }
+
+    &:nth-child(odd) > .burger_list_item--info > button {
+        left: 0!important;
+    }
+
+    &:nth-child(odd) > .burger_list_item_pic--container > .burger_list_item--pic >
+    .burger_list_item_border--right {
+        height: 100%;
+    }
+
+    &:nth-child(odd) > .burger_list_item_pic--container > .burger_list_item--pic >
+    .burger_list_item_border--left {
+        height: 50%;
+    }
+
+    .burger_list_item_pic--container {
+        width: 100%;
+        min-width: 280px;
+        max-width: 320px;
+        position: relative;
+        z-index: 2;
+
+        & > .burger_list_item--pic {
+            width: 100%;
+            height: auto;
+            position: relative;
+            z-index: 2;
+
+            & > .burger_list_item_border--bottom,
+            & > .burger_list_item_border--left,
+            & > .burger_list_item_border--right {
+                position: absolute;
+                z-index: 2;
+                background: $primary_brown;
+            }
+
+            & > .burger_list_item_border--bottom {
+                bottom: 0;
+                width: 100%;
+                height: 10px;
+            }
+
+            & > .burger_list_item_border--left {
+                left: 0;
+                bottom: 0;
+                width: 10px;
+                height: 100%;
+            }
+
+            & > .burger_list_item_border--right {
+                right: 0;
+                bottom: 0;
+                width: 10px;
+                height: 50%;
+            }
+
+            & > img {
+                width: 100%;
+                max-height: 188px;
+            }
+
+        }
+
+        & > .burger_list_item--ranking {
+            width: 100%;
+            height: 54px;
+            background: $primary_black;
+
+            & > div.star--full,
+            & > div.star--empty {
+                width: 21.48px;
+                height: 20.57px;
+                margin: 0 3.5px;
+            }
+
+            & > div.star--full {
+                background: url('/media/svg/star_full.svg') no-repeat center center / contain;
+            }
+
+            & > div.star--empty {
+                background: url('/media/svg/star_empty.svg') no-repeat center center / contain;
+            }
+        }
+    }
+
+    & > .burger_list_item--info {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        min-height: 265px;
+        max-width: 500px;
+        background: #FFF;
+        padding: calc(1.5rem + 54px) 1.25rem calc(1.5rem + 45px) 1.25rem;
+        top: -54px;
+        box-shadow: $primary_box_shadow;
+
+        @media only screen and (min-width: $breakpoints_sm) {
+            max-width: calc(100% - 320px);
+            top: 0;
+            padding: 1.5rem 2rem calc(1.5rem + 45px) 2rem;
+        }
+
+        @media only screen and (min-width: $breakpoints_md) {
+            padding: 1.5rem 2rem 45px 2rem;
+        }
+
+        & > h2 {
+            line-height: calc(#{$base_line_height} + 1rem);
+            margin-bottom: 1rem;
+        }
+
+        & > h2,
+        & > p.burger_list_item--price {
+            font-size: 28px;
+        }
+
+        & > h2,
+        & > p {
+            font-weight: $font_bold;
+            max-width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+
+            @media only screen and (min-width: $breakpoints_sm) {
+                max-width: 500px;
+            }
+        }
+
+        & > p.burger_list_item--ingredients,
+        & > p.burger_list_item--description {
+            font-size: 16px;
+        }
+
+        & > p.burger_list_item--description {
+            font-size: 0.9rem;
+            padding-right: 0.25rem;
+        }
+
+        & > p.burger_list_item--price {
+            margin: 2rem auto;
+        }
+
+        & > button {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+    }
+}

@@ -10,7 +10,7 @@
     font-weight: $font_bold;
     color: $primary_light_brown;
 
-    padding-left: 104px;
+    padding-left: 98px;
     cursor: pointer;
 
     &:before {
@@ -41,5 +41,15 @@
 
     &:focus {
         outline: none;
+    }
+}
+
+.main_button--burger_list {
+    border-radius: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    &:before {
+        border-bottom-left-radius: 0px;
     }
 }
