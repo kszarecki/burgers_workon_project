@@ -17,6 +17,8 @@ html, body {
 body {
     height: 100vh;
     min-width: 320px;
+    max-width: 2560px;
+    margin: 0 auto;
 
     font-family: $font_body_bold;
     font-weight: $font_bold;
@@ -27,6 +29,7 @@ body {
 @import "./header/header";
 @import "./main/main";
 @import "./burger_list_item/burger_list_item";
+@import "./home_burger_list_display/home_burger_list_display";
 @import "./button/buttons";
 @import "./review_slider/review_slider";
 @import "./banner/banner";
