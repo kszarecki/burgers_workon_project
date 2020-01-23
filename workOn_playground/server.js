@@ -40,9 +40,9 @@ app.get('/koszyk', (req, res) => {
   res.render('koszyk', { title: 'Twoje zakupy', picture: 'cart_hero_image.jpg' })
 })
 
-app.get('/zamówienie', (req, res) => {
+app.get('/checkout', (req, res) => {
 
-  res.render('checkout', { title: 'Twoje zamówienie', picture: 'checkout_hero_image.jpg' })
+  res.render('checkout', { title: 'Zamówienie', picture: 'checkout_hero_image.jpg' })
 })
 
 app.get('/404', (req, res) => {
