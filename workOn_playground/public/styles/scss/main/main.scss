@@ -4,6 +4,10 @@
     min-height: calc(100vh - #{$footer_height});
     position: relative;
 
+    @media only screen and (max-height: 768px) {
+        min-height: 480px
+    }
+
     &:before {
         content: attr(data-title);
         position: absolute;

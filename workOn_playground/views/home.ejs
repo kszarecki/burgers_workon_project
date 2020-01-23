@@ -1,4 +1,4 @@
-<%- include('./components/header.ejs') -%>
+<%- include('./components/header.ejs', { title: title, picture: picture }) -%>
 
 <main class="front_page--container" data-title='Wybierz swój ulubiony burger'>
 
@@ -77,7 +77,7 @@
             <!-- END BURGER LIST ITEM -->
 
         </div>
-        <button class="main_button">Sprawdź menu</button>
+        <a href='/menu'><button class="main_button">Sprawdź menu</button></a>
     </section>
 
     <!-- END BURGER LIST DISPLAY -->
@@ -103,18 +103,7 @@
 
     <!-- REVIEW SLIDER -->
 
-    <!-- BURGER MAKER BANNER -->
-
-    <section class="burger_maker--banner">
-        <div class="burger_maker_border--top"></div>
-        <div class="burger_maker_banner--container d-flex flex-column justify-content-center align-items-center">
-            <img src="/media/svg/burger_maker_banner_title.svg" alt="banner_title">
-            <h2>Stwórz smacznego burgera</h2>
-            <button class="main_button">Burger Maker</button>
-        </div>
-    </section>
-
-    <!-- END BURGER MAKER BANNER -->
+    <%- include('./components/burger_maker_banner.ejs') -%>
 
 </main>
 

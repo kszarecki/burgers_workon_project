@@ -83,14 +83,22 @@
             }
 
             & > li {
+                margin: 1.5rem 1rem;
+            }
+
+            & > li > a {
                 font-size: 28px;
                 font-weight: $font_bold;
                 color: $primary_white;
-                margin: 1.5rem 1rem;
                 cursor: pointer;
+                text-decoration: none;
+
+                &:hover {
+                    color: $primary_light_brown;
+                }
             }
 
-            & > li.menu_link--active {
+            & > li > a.menu_link--active {
                 color: $primary_light_brown;
             }
 

@@ -39,10 +39,15 @@ footer {
             cursor: pointer;
             margin: 0.875rem 0;
 
-            & > p {
-                color: $primary_light_brown;
+            & > a {
+                color: $primary_white;
                 margin-bottom: 0;
                 font-size: 0.875rem;
+                text-decoration: none;
+
+                &:hover {
+                    color: $primary_light_brown;
+                }
             }
         }
 
@@ -51,7 +56,11 @@ footer {
             height: 32px;
             margin: 1.25rem 0;
 
-            & > img {
+            & > a {
+                height: 100%;
+            }
+
+            & > a > img {
                 height: 100%;
                 cursor: pointer;
             }

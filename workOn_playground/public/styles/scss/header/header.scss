@@ -99,6 +99,23 @@ header {
             @media only screen and (min-width: $breakpoints_xs) {
                 right: 2rem;
             }
+
+            @keyframes bounce_arrow {
+                0% {
+                  transform: translateY(0px);
+                }
+                20% {
+                    transform: translateY(7.5px);
+                }
+                40% {
+                    transform: translateY(-7.5px);
+                }
+                70%, 100% {
+                    transform: translateY(0px);
+                }
+            }
+
+            animation: bounce_arrow 4s 0.5s infinite ease;
         }
 
     }

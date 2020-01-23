@@ -15,12 +15,12 @@
     <header>
         <section>
             <nav class='row d-flex justify-content-between align-items-center px-2 px-sm-4 m-0'>
-                <img class='img-fluid' src="/media/svg/logo_icon.svg" alt="logo">
-                <img class='img-fluid' src="/media/svg/menu_icon.svg" alt="menu_icon">
+                <a href="/"><img class='img-fluid' src="/media/svg/logo_icon.svg" alt="logo"></a>
+                <img id="hamburger_icon" class='img-fluid' src="/media/svg/menu_icon.svg" alt="menu_icon">
             </nav>
-            <div class='hero_image--container'>
-                <h1>Burger for you</h1>
-                <img class='arrow_down--button img-fluid' src="/media/svg/arrow_down_icon.svg" alt="arrow_down" />
+            <div class='hero_image--container' style="background: url('/media/jpg/<%= picture %>') no-repeat center center / cover;">
+                <h1><%= title %></h1>
+                <img id="arrow_down_icon" class='arrow_down--button img-fluid' src="/media/svg/arrow_down_icon.svg" alt="arrow_down" />
             </div>
         </section>
     </header>

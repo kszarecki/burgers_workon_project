@@ -13,6 +13,18 @@
 
     padding-left: 98px;
     cursor: pointer;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        background: $primary_light_brown;
+        color: $primary_black;
+        transition: all 0.2s ease-out;
+    }
+
+    &:hover:after {
+        transform: translateY(-5px) rotate(-5deg);
+        transition: transform 0.3s ease-out;
+    }
 
     &:before {
         content: '';
@@ -38,6 +50,7 @@
         height: 52px;
         background: url('/media/svg/button_icon.svg') no-repeat center center / cover;
         z-index: 2;
+        transition: transform 0.3s ease-in-out;
     }
 
     &:focus {

@@ -68,7 +68,11 @@
             }
         }
 
-        & > button {
+        & > a {
+            cursor: default;
+        }
+
+        & > a > button {
             margin: 1.25rem auto 0 auto;
         }
     }

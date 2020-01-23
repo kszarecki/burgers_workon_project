@@ -12,12 +12,42 @@ app.set('view engine', 'ejs')
 // ROUTES
 app.get('/', (req, res) => {
 
-  res.render('front-page', {  })
+  res.render('home', { title: 'Burger for you', picture: 'home_hero_image.jpg' })
 })
 
-app.get('/page-template', (req, res) => {
+app.get('/menu', (req, res) => {
 
-  res.render('page', {  })
+  res.render('menu', { title: 'Lista burgerów', picture: 'menu_hero_image.jpg' })
+})
+
+app.get('/opinie', (req, res) => {
+
+  res.render('opinie', { title: 'Opinie klientów', picture: 'opinions_hero_image.jpg' })
+})
+
+app.get('/burger-maker', (req, res) => {
+
+  res.render('burger-maker', { title: 'Własny burger', picture: 'burger_maker_hero_image.jpg' })
+})
+
+app.get('/kontakt', (req, res) => {
+
+  res.render('kontakt', { title: 'Napisz do nas', picture: 'contact_hero_image.jpg' })
+})
+
+app.get('/koszyk', (req, res) => {
+
+  res.render('koszyk', { title: 'Twoje zakupy', picture: 'cart_hero_image.jpg' })
+})
+
+app.get('/zamówienie', (req, res) => {
+
+  res.render('checkout', { title: 'Twoje zamówienie', picture: 'checkout_hero_image.jpg' })
+})
+
+app.get('/404', (req, res) => {
+
+  res.render('404', { title: 'Błąd strony', picture: '404_hero_image.jpg' })
 })
 
 // PORT
