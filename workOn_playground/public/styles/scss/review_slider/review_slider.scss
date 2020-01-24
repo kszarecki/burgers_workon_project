@@ -24,7 +24,7 @@
         margin: 0 auto;
         background: rgba($primary_brown, 0.8);
         min-height: 360px;
-        padding: 1.5rem 2rem;
+        padding: calc(40px + 0.5rem) 2rem calc(40px + 1.5rem) 2rem;
 
         & > .review_border--left,
         & > .review_border--right {
@@ -74,5 +74,98 @@
             }
         }
 
+    }
+
+    & > .review_slider_control_panel--container {
+        width: 230px;
+        height: 40px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        background: $primary_brown;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        & > button {
+            background: none;
+            border: none;
+            position: relative;
+            height: 100%;
+            padding: 0;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        & > button.review_slider--prev,
+        & > button.review_slider--next {
+            transition: all 0.4s ease-in-out;
+            width: 75px;
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 24.97px;
+                height: 15.49px;
+                background: url('/media/svg/control_panel_arrow.svg');
+            }
+
+            &:hover {
+                background: $primary_black;
+            }
+        }
+
+        & > button.review_slider--prev {
+            border-top-left-radius: 20px;
+            box-shadow: inset -4px 0px 8px rgba($primary_black, 0.25);
+
+            &:after {
+                top: 12.5px;
+                left: 28px;
+            }
+        }
+
+        & > button.review_slider--next {
+            border-top-right-radius: 20px;
+            box-shadow: inset 4px 0px 8px rgba($primary_black, 0.25);
+
+            &:after {
+                top: 13.5px;
+                right: 28px;
+                transform: rotate(180deg);
+            }
+        }
+
+        & > div.review_slider--more {
+            width: 80px;
+            height: 100%;
+            background: $primary_light_brown;
+
+            & > a {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                display: flex;
+
+                &:after {
+                    content: '...';
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    top: -13.5px;
+                    font-size: 58px;
+                    font-weight: $font_bold;
+                    color: $primary_brown;
+                    text-shadow: $primary_text_shadow;
+                    z-index: 1;
+                }
+            }
+        }
     }
 }

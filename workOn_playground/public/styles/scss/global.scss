@@ -53,4 +53,42 @@ body {
 @import "./menu_modal/menu_modal";
 @import "./footer/footer";
 
+.not_found_info--container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+
+    & > h1 {
+        font-size: 28px;
+        font-weight: $font_bold;
+        line-height: calc(#{$base_line_height} + 1rem);
+
+        @media only screen and (min-width: $breakpoints_xs) {
+            font-size: 36px;
+        }
+
+        @media only screen and (min-width: $breakpoints_sm) {
+            font-size: 42px;
+        }
+
+        @media only screen and (min-width: $breakpoints_md) {
+            font-size: 48px;
+        }
+
+        @media only screen and (min-width: $breakpoints_lg) {
+            font-size: 54px;
+        }
+    }
+
+    & > p {
+        margin: 1rem 0 2rem 0;
+        font-weight: $font_bold;
+
+        @media only screen and (min-width: $breakpoints_sm) {
+            margin: 2rem 0 1.5rem;
+        }
+    }
+}
+
 // END GLOBAL STYLES
