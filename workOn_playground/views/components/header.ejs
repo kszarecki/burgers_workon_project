@@ -21,8 +21,14 @@
     <header>
         <section>
             <nav class='row d-flex justify-content-between align-items-center px-2 px-sm-4 m-0'>
-                <a href="/"><img class='img-fluid' src="/media/svg/logo_icon.svg" alt="logo"></a>
-                <img id="hamburger_icon" class='img-fluid' src="/media/svg/menu_icon.svg" alt="menu_icon">
+                <a href="/">
+                    <img id="logo_icon" class='img-fluid' src="/media/svg/logo_icon.svg" alt="logo">
+                    <img id="logo_icon_mobile" class='img-fluid' src="/media/svg/logo_icon_mobile.svg" alt="logo_mobile">
+                </a>
+                <div class="d-flex align-items-center">
+                    <a href="/koszyk" data-counter="0"><img id="cart_icon" src="/media/svg/cart_icon.svg" alt="cart_icon"></a>
+                    <img id="hamburger_icon" class='img-fluid' src="/media/svg/menu_icon.svg" alt="menu_icon">
+                </div>
             </nav>
             <div class='hero_image--container' style="background: url('/media/jpg/<%= picture %>') no-repeat center center / cover;">
                 <h1><%= title %></h1>
