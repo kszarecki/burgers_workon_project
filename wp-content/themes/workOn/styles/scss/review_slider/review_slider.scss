@@ -1,0 +1,171 @@
+.review_slider--container {
+    width: 100%;
+    position: relative;
+    background: url('/media/jpg/review_slider_background.jpg') no-repeat center center / cover;
+
+    & > h2 {
+        font-family: $font_heading_title;
+        font-size: 1.25rem;
+        color: $primary_light_brown;
+        text-align: center;
+        line-height: calc(#{$base_line_height} + 1rem);
+        margin: 2rem auto;
+
+        @media only screen and (min-width: $breakpoints_xs) {
+            font-size: 1.625rem;
+            margin: 2.5rem auto;
+        }
+    }
+
+    & > .review_quote--container {
+        position: relative;
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+        background: rgba($primary_brown, 0.8);
+        min-height: 360px;
+        padding: calc(40px + 0.5rem) 2rem calc(40px + 1.5rem) 2rem;
+
+        & > .review_border--left,
+        & > .review_border--right {
+            position: absolute;
+            bottom: 0;
+            width: 10px;
+            height: 230px;
+            background: $primary_light_brown;
+        }
+
+        & > .review_border--left {
+            left: 0;
+        }
+
+        & > .review_border--right {
+            right: 0;
+        }
+
+        & > .review_quote {
+            position: relative;
+            width: 100%;
+            max-width: 650px;
+
+            & > img#quote_up {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            & > img#quote_down {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                transform: rotate(180deg);
+            }
+
+            & > p {
+                margin: 3.5rem auto;
+                text-align: center;
+                font-size: 0.9rem;
+                color: $primary_light_brown;
+                line-height: calc(#{$base_line_height} + 0.5rem);
+
+                @media only screen and (min-width: $breakpoints_xs) {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+    }
+
+    & > .review_slider_control_panel--container {
+        width: 230px;
+        height: 40px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        background: $primary_brown;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        & > button {
+            background: none;
+            border: none;
+            position: relative;
+            height: 100%;
+            padding: 0;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        & > button.review_slider--prev,
+        & > button.review_slider--next {
+            transition: all 0.4s ease-in-out;
+            width: 75px;
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 24.97px;
+                height: 15.49px;
+                background: url('/media/svg/control_panel_arrow.svg');
+            }
+
+            &:hover {
+                background: $primary_black;
+            }
+        }
+
+        & > button.review_slider--prev {
+            border-top-left-radius: 20px;
+            box-shadow: inset -4px 0px 8px rgba($primary_black, 0.25);
+
+            &:after {
+                top: 12.5px;
+                left: 28px;
+            }
+        }
+
+        & > button.review_slider--next {
+            border-top-right-radius: 20px;
+            box-shadow: inset 4px 0px 8px rgba($primary_black, 0.25);
+
+            &:after {
+                top: 13.5px;
+                right: 28px;
+                transform: rotate(180deg);
+            }
+        }
+
+        & > div.review_slider--more {
+            width: 80px;
+            height: 100%;
+            background: $primary_light_brown;
+
+            & > a {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                display: flex;
+
+                &:after {
+                    content: '...';
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    top: -13.5px;
+                    font-size: 58px;
+                    font-weight: $font_bold;
+                    color: $primary_brown;
+                    text-shadow: $primary_text_shadow;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}

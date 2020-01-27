@@ -1,0 +1,10 @@
+{
+    "private": true,
+    "scripts": {
+    },
+    "devDependencies": {
+    },
+    "dependencies": {
+        "bootstrap": "^4.4.1"
+    }
+}

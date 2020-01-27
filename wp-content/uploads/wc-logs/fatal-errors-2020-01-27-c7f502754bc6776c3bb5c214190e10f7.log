@@ -1,0 +1,72 @@
+2020-01-27T11:46:18+00:00 CRITICAL Uncaught Error: Call to undefined function get_page_title() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:33
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 33
+
+2020-01-27T11:48:02+00:00 CRITICAL Uncaught Error: Call to undefined function get_page_title() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:33
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 33
+
+2020-01-27T11:48:58+00:00 CRITICAL Uncaught Error: Call to undefined function get_page_title() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:33
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 33
+
+2020-01-27T11:49:01+00:00 CRITICAL Uncaught Error: Call to undefined function get_page_title() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:33
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 33
+
+2020-01-27T11:49:05+00:00 CRITICAL Uncaught Error: Call to undefined function get_page_title() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:33
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 33
+
+2020-01-27T11:50:10+00:00 CRITICAL Uncaught Error: Call to undefined function get_page_title() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:33
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 33
+

@@ -1,0 +1,69 @@
+.main_button {
+    position: relative;
+    width: 255px;
+    height: 45px;
+    border: none;
+    border-radius: 20px;
+    background: $primary_black;
+    box-shadow: $primary_box_shadow;
+
+    font-size: $font_body_bold;
+    font-weight: $font_bold;
+    color: $primary_light_brown;
+
+    padding-left: 98px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        background: $primary_light_brown;
+        color: $primary_black;
+        transition: all 0.2s ease-out;
+    }
+
+    &:hover:after {
+        transform: translateY(-5px) rotate(-5deg);
+        transition: transform 0.3s ease-out;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 98px;
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background: $primary_brown;
+        box-shadow: inset -4px 4px 8px rgba($primary_black, 0.35);
+        z-index: 1;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 8px;
+        left: 24.5px;
+        width: 48.91px;
+        height: 52px;
+        background: url('../../media/svg/button_icon.svg') no-repeat center center / cover;
+        z-index: 2;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.main_button--burger_list {
+    border-radius: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    &:before {
+        border-bottom-left-radius: 0px;
+    }
+}

@@ -1,0 +1,82 @@
+@mixin main_styles {
+    width: 100%;
+    margin: 0 auto;
+    min-height: calc(100vh - #{$footer_height});
+    position: relative;
+
+    @media only screen and (max-height: 768px) {
+        min-height: 480px
+    }
+
+    &:before {
+        content: attr(data-title);
+        position: absolute;
+        top: -60px;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: $primary_black;
+        font-family: $font_heading_title;
+        font-size: 1.25rem;
+
+        @media only screen and (min-width: $breakpoints_xs) {
+            top: -120px;
+            height: 120px;
+            font-size: 1.625rem;
+        }
+    }
+}
+
+.front_page--container {
+    @include main_styles;
+}
+
+.page--container {
+    @include main_styles;
+
+    & > .page_overlay--container {
+        max-width: 960px;
+        @include main_styles;
+
+        background: $primary_white;
+        box-shadow: $primary_box_shadow;
+
+        &:before {
+            background: $primary_white;
+        }
+
+        & > .main_border {
+            position: absolute;
+            top: -60px;
+            background: $primary_light_brown;
+
+            @media only screen and (min-width: $breakpoints_xs) {
+                top: -120px;
+            }
+        }
+
+        & > .main_border--top {
+            width: 100%;
+            height: 10px;
+        }
+
+        & > .main_border--left,
+        & > .main_border--right {
+            width: 10px;
+            height: 45%;
+            max-height: 230px;
+        }
+
+        & > .main_border--left {
+            left: 0;
+        }
+
+        & > .main_border--right {
+            right: 0;
+        }
+
+    }
+}

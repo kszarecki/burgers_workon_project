@@ -1,0 +1,80 @@
+@mixin burger_maker_border_top_styles {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10px;
+    background: $primary_light_brown;
+}
+
+@mixin burger_maker_banner_styles($min_height, $max_height) {
+
+    width: 100%;
+    height: $min_height;
+    position: absolute;
+    bottom: 0;
+
+    @media only screen and (min-width: $breakpoints_xs) {
+        height: $max_height;
+    }
+
+}
+
+@mixin burger_maker_container_styles {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.burger_maker--banner {
+
+    @include burger_maker_banner_styles(200px, 280px);
+
+    @media only screen and (min-width: $breakpoints_md) {
+        @include burger_maker_banner_styles(280px, 350px);
+
+    }
+
+    & > .burger_maker_border--top {
+        @include burger_maker_border_top_styles;
+    }
+
+    & > .burger_maker_banner--container {
+        @include burger_maker_container_styles;
+
+        & > img {
+            width: 100%;
+            max-width: 650px;
+            align-self: flex-start;
+            margin-bottom: 0.5rem;
+
+            @media only screen and (min-width: $breakpoints_xs) {
+                margin-bottom: 1.25rem;
+            }
+        }
+
+        & > h2 {
+            font-family: $font_body_bold;
+            font-weight: $font_bold;
+            color: $primary_white;
+            margin: 1.25rem 0;
+            font-size: calc(#{$base_font_size} * 2.5);
+            align-self: flex-end;
+            display: none;
+
+            @media only screen and (min-width: $breakpoints_md) {
+                margin-right: 4rem;
+                display: inherit;
+            }
+        }
+
+        & > a {
+            cursor: default;
+        }
+
+        & > a > button {
+            margin: 1.25rem auto 0 auto;
+        }
+    }
+}
