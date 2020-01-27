@@ -32,3 +32,12 @@ add_action('init', 'register_menu');
 // ENABLE POST THUMBNAILS
 add_theme_support('post-thumbnails');
 
+// ADD LINK ACTIVE CLASS
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+function special_nav_class ($classes, $item) {
+    if (in_array('current-page-ancestor', $classes) || in_array('current-menu-item', $classes) ){
+        $classes[] = 'active';
+    }
+    return $classes;
+}

@@ -3,7 +3,7 @@
     height: auto;
     justify-content: center;
     align-items: center;
-    background: url('/media/jpg/home_burger_list_background.jpg') no-repeat center center / cover;
+    background: url('../../media/jpg/home_burger_list_background.jpg') no-repeat center center / cover;
 
     & > .home_burger_list_items--container {
 
@@ -132,11 +132,11 @@
                     }
         
                     & > div.star--full {
-                        background: url('/media/svg/star_full.svg') no-repeat center center / contain;
+                        background: url('../../media/svg/star_full.svg') no-repeat center center / contain;
                     }
         
                     & > div.star--empty {
-                        background: url('/media/svg/star_empty.svg') no-repeat center center / contain;
+                        background: url('../../media/svg/star_empty.svg') no-repeat center center / contain;
                     }
                 }
 

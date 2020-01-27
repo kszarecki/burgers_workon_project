@@ -70,3 +70,9 @@ Stack trace:
 #7 {main}
   thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 33
 
+2020-01-27T19:27:42+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) w /var/www/html/burgers_workon_project/wp-content/themes/workOn/footer.php w linii 86
+
+2020-01-27T19:27:45+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) w /var/www/html/burgers_workon_project/wp-content/themes/workOn/footer.php w linii 86
+
+2020-01-27T19:27:50+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) w /var/www/html/burgers_workon_project/wp-content/themes/workOn/footer.php w linii 86
+

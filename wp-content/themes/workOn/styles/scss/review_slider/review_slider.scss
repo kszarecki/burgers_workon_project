@@ -1,7 +1,7 @@
 .review_slider--container {
     width: 100%;
     position: relative;
-    background: url('/media/jpg/review_slider_background.jpg') no-repeat center center / cover;
+    background: url('../../media/jpg/review_slider_background.jpg') no-repeat center center / cover;
 
     & > h2 {
         font-family: $font_heading_title;
@@ -110,7 +110,7 @@
                 position: absolute;
                 width: 24.97px;
                 height: 15.49px;
-                background: url('/media/svg/control_panel_arrow.svg');
+                background: url('../../media/svg/control_panel_arrow.svg');
             }
 
             &:hover {

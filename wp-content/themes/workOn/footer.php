@@ -7,7 +7,7 @@
     <div class="burger_maker_banner--container d-flex flex-column justify-content-center align-items-center">
         <img src="<?php echo MEDIA . '/svg/burger_maker_banner_title.svg'; ?>" alt="banner_title">
         <h2>Stwórz smacznego burgera</h2>
-        <a href='<?php echo get_home_url() . '/burger-maker'; ?>'><button class="main_button">Burger Maker</button></a>
+        <a href='<?php echo get_permalink( get_page_by_title( 'Burger Maker' ) ); ?>'><button class="main_button">Burger Maker</button></a>
     </div>
 </section>
 
@@ -24,7 +24,7 @@
     <div class="burger_maker_banner--container d-flex flex-column justify-content-center align-items-center">
         <img src="<?php echo MEDIA . '/svg/burger_maker_banner_title.svg'; ?>" alt="banner_title">
         <h2>Stwórz smacznego burgera</h2>
-        <a href='<?php echo get_home_url() . '/burger-maker'; ?>'><button class="main_button">Burger Maker</button></a>
+        <a href='<?php echo get_permalink( get_page_by_title( 'Burger Maker' ) ); ?>'><button class="main_button">Burger Maker</button></a>
     </div>
 </section>
 
@@ -40,7 +40,23 @@
         <img id="close_icon" src="<?php echo MEDIA . '/svg/close_icon.svg'; ?>" alt="close_icon">
     </div>
     <div class="menu_modal_links--container">
-        <ul>
+        <?php $main_menu = array(
+            'theme_location' => 'main-menu',
+            'menu' => 'Main Menu',
+            'container' => false,
+            'before' => '<span style="
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            margin-right: 1.5rem;
+            background: #F49521;
+            "></span>',
+        ); ?>
+        <?php
+            wp_nav_menu($main_menu)
+        ?>
+        <!-- <ul>
             <span></span>
             <li><a href='/' class="menu_link--active">Home</a></li>
             <span></span>
@@ -52,7 +68,7 @@
             <span></span>
             <li><a href='/kontakt'>Kontakt</a></li>
             <span></span>
-        </ul>
+        </ul> -->
     </div>
 </section>
 
@@ -67,7 +83,7 @@
         <p>Napisz do nas za pomocą naszego formularza kontaktowego</p>
         <div class="footer_contact--link d-flex justify-content-between align-items-center">
             <img src="<?php echo MEDIA . '/svg/arrow_left_icon.svg'; ?>" alt="left arrow">
-            <a href='<?php echo get_home_url() . '/kontakt'; ?>'>Zakładka Kontakt</a>
+            <a href='<?php echo get_permalink( get_page_by_title( 'Napisz do nas' ) ); ?>'>Zakładka Kontakt</a>
         </div>
         <div class="footer_social_media--container d-flex justify-content-between align-items-center">
             <a href="https://www.facebook.com" target="_blank" rel="noopener">

@@ -1,8 +1,8 @@
 @import './../../node_modules/bootstrap/scss/bootstrap';
 
-@import "_breakpoints";
-@import "_colors";
-@import "_typography";
+@import "breakpoints";
+@import "colors";
+@import "typography";
 
 $footer_height: 290px;
 $primary_box_shadow: 0px 0px 8px rgba($primary_black, 0.15);

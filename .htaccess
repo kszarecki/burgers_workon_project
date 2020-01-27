@@ -5,3 +5,5 @@
 # filtrów WordPressa. Zmiany dokonane bezpośrednio tutaj będą nadpisywane.
 
 # END WordPress
+
+ErrorDocument 404 /burgers_workon_project/index.php?error=404

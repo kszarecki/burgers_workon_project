@@ -1,3 +1,139 @@
 <?php get_header(); ?>
 
+<!-- BURGER LIST DISPLAY -->
+
+<section class="home_burger_list_display--container d-flex flex-column">
+    <div class="home_burger_list_items--container d-flex">
+
+        <!-- BURGER LIST ITEM -->
+
+        <div class="home_burger_list_item--container d-flex">
+            <div class="burger_list_item_pic--container">
+                <div class="burger_list_item--pic">
+                    <div class="burger_list_item_border--bottom"></div>
+                    <div class="burger_list_item_border--left"></div>
+                    <div class="burger_list_item_border--right"></div>
+                    <img src="<?php echo MEDIA . '/jpg/burger_item_pic_01.jpg'; ?>" alt="burger_item_pic_01">
+                </div>
+                <div class="burger_list_item--ranking d-flex justify-content-center align-items-center">
+                    <div class="star--full"></div>
+                    <div class="star--full"></div>
+                    <div class="star--full"></div>
+                    <div class="star--full"></div>
+                    <div class="star--empty"></div>
+                </div>
+                <h2>Burger name</h2>
+            </div>
+        </div>
+
+        <!-- END BURGER LIST ITEM -->
+
+        <!-- BURGER LIST ITEM -->
+
+        <div class="home_burger_list_item--container d-flex">
+            <div class="burger_list_item_pic--container">
+                <div class="burger_list_item--pic">
+                    <div class="burger_list_item_border--bottom"></div>
+                    <div class="burger_list_item_border--left"></div>
+                    <div class="burger_list_item_border--right"></div>
+                    <img src="<?php echo MEDIA . '/jpg/burger_item_pic_02.jpg'; ?>" alt="burger_item_pic_02">
+                </div>
+                <div class="burger_list_item--ranking d-flex justify-content-center align-items-center">
+                    <div class="star--full"></div>
+                    <div class="star--full"></div>
+                    <div class="star--full"></div>
+                    <div class="star--full"></div>
+                    <div class="star--empty"></div>
+                </div>
+                <h2>Burger name</h2>
+            </div>
+        </div>
+
+        <!-- END BURGER LIST ITEM -->
+
+        <!-- BURGER LIST ITEM -->
+
+        <div class="home_burger_list_item--container d-flex">
+            <div class="burger_list_item_pic--container">
+                <div class="burger_list_item--pic">
+                    <div class="burger_list_item_border--bottom"></div>
+                    <div class="burger_list_item_border--left"></div>
+                    <div class="burger_list_item_border--right"></div>
+                    <img src="<?php echo MEDIA . '/jpg/burger_item_pic_03.jpg'; ?>" alt="burger_item_pic_03">
+                </div>
+                <div class="burger_list_item--ranking d-flex justify-content-center align-items-center">
+                    <div class="star--full"></div>
+                    <div class="star--full"></div>
+                    <div class="star--full"></div>
+                    <div class="star--full"></div>
+                    <div class="star--empty"></div>
+                </div>
+                <h2>Burger name</h2>
+            </div>
+        </div>
+
+        <!-- END BURGER LIST ITEM -->
+
+    </div>
+    <a href='<?php echo get_permalink( get_page_by_title( 'Lista Burgerów' ) );?>'><button class="main_button">Sprawdź menu</button></a>
+</section>
+
+<!-- END BURGER LIST DISPLAY -->
+
+<!-- REVIEW SLIDER -->
+
+<section class="review_slider--container d-flex flex-column justify-content-between">
+    <h2>Poznaj opinie naszych klientów</h2>
+    <div class="review_quote--container d-flex justify-content-center align-items-center">
+        <div class="review_border--left"></div>
+        <div class="review_border--right"></div>
+        <div class="review_quote">
+            <img id="quote_up" src="<?php echo MEDIA . '/svg/quote_icon.svg'; ?>" alt="quote_icon_up">
+            <img id="quote_down" src="<?php echo MEDIA . '/svg/quote_icon.svg'; ?>" alt="quote_icon_down">
+            <p class="home_quote_paragraph">
+                Komentarz 1 - Proin sit amet nibh eros. 
+                Praesent pharetra feugiat ullamcorper. Cras quis libero porta, 
+                posuere lorem sit amet, tincidunt enim. Phasellus pellentesque 
+                tellus neque, a rhoncus lorem posuere sed. Vestibulum condimentum 
+                nunc non lectus pharetra, nec congue elit mattis. Pellentesque id feugiat lorem.
+            </p>
+            <p class="home_quote_paragraph" style="display: none;">
+                Komentarz 2 - Proin sit amet nibh eros. 
+                Praesent pharetra feugiat.
+            </p>
+            <p class="home_quote_paragraph" style="display: none;">
+                Komentarz 3 - Proin sit amet nibh eros. 
+                Praesent pharetra feugiat ullamcorper. Cras quis libero porta, 
+                posuere lorem sit amet, tincidunt enim.
+            </p>
+            <p class="home_quote_paragraph" style="display: none;">
+                Komentarz 4 - Proin sit amet nibh eros. 
+                Praesent pharetra feugiat ullamcorper. Cras quis libero porta, 
+                posuere lorem sit amet, tincidunt enim. Phasellus pellentesque 
+                tellus neque, a rhoncus lorem posuere sed. Vestibulum condimentum 
+                nunc non lectus pharetra, nec congue elit mattis. Pellentesque id feugiat lorem.
+            </p>
+            <p class="home_quote_paragraph" style="display: none;">
+                Komentarz 5 - Proin sit amet nibh eros. 
+                Praesent pharetra feugiat ullamcorper. Cras quis libero porta, 
+                posuere lorem sit amet, tincidunt enim. Phasellus pellentesque 
+                tellus neque, a rhoncus lorem posuere sed. Vestibulum condimentum 
+                nunc non lectus pharetra, nec congue elit mattis. Pellentesque id feugiat lorem.
+                Phasellus pellentesque 
+                tellus neque, a rhoncus lorem posuere sed. Vestibulum condimentum 
+                nunc non lectus pharetra, nec congue elit mattis. Pellentesque id feugiat lorem.
+            </p>
+        </div>
+    </div>
+    <div class="review_slider_control_panel--container d-flex justify-content-between align-items-center">
+        <button class="review_slider--prev"></button>
+        <div class="review_slider--more">
+            <a href='<?php echo get_permalink( get_page_by_title( 'Opinie Klientów' ) );?>'></a>
+        </div>
+        <button class="review_slider--next"></button>
+    </div>
+</section>
+
+<!-- REVIEW SLIDER -->
+
 <?php get_footer(); ?>

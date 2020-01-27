@@ -25,7 +25,7 @@
                 <img id="logo_icon_mobile" class='img-fluid' src="<?php echo MEDIA . '/svg/logo_icon_mobile.svg'; ?>" alt="logo_mobile">
             </a>
             <div class="d-flex align-items-center">
-                <a href="<?php echo get_home_url() . '/koszyk';?>" data-counter="0"><img id="cart_icon" src="<?php echo MEDIA . '/svg/cart_icon.svg'; ?>" alt="cart_icon"></a>
+                <a href="<?php echo get_permalink( get_page_by_title( 'Twój Koszyk' ) );?>" data-counter="0"><img id="cart_icon" src="<?php echo MEDIA . '/svg/cart_icon.svg'; ?>" alt="cart_icon"></a>
                 <img id="hamburger_icon" class='img-fluid' src="<?php echo MEDIA . '/svg/menu_icon.svg'; ?>" alt="menu_icon">
             </div>
         </nav>

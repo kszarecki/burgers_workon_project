@@ -83,7 +83,10 @@
             }
 
             & > li {
-                margin: 1.5rem 1rem;
+                margin: 1.5rem 0 1.5rem 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
 
             & > li > a {
@@ -98,16 +101,8 @@
                 }
             }
 
-            & > li > a.menu_link--active {
-                color: $primary_light_brown;
-            }
-
-            & > span {
-                width: 10px;
-                height: 10px;
-                margin: 0 0.5rem;
-                background: $primary_light_brown;
-                border-radius: 5px;
+            & > li.active > a {
+                color: $primary_light_brown!important;
             }
         }
     }
