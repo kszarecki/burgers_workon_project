@@ -119,13 +119,12 @@ function my_custom_no_shipping_message( $message ) {
 
 // CUSTOM POSTCODE VALIDATION
 add_action('woocommerce_checkout_process', 'my_custom_checkout_field_process');
-  
+
 function my_custom_checkout_field_process() {
     global $woocommerce;
-  
+
     // Check if set, if its not set add an error. This one is only requite for companies
-    if ( ! (preg_match("^\\d{2}[- ]{0,1}\\d{3}$", $_POST['billing_postcode'] )) ||
-    ! (preg_match("^\\d{2}[- ]{0,1}\\d{3}$", $_POST['shipping_postcode'] ))){
+    if ( ! (preg_match('/^([0-9]{2})(-[0-9]{3})?$/i', $_POST['billing_postcode'] ))){
         wc_add_notice( "Nieprawidłowy kod pocztowy."  ,'error' );
     }
 }
