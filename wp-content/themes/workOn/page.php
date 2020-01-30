@@ -51,11 +51,14 @@
                 <?php endforeach; ?>
                 <!-- END FULL STARS LOOP -->
 
-                <!-- EMPTY STARS LOOP -->
-                <?php foreach($empty_stars_arr as $value): ?>
-                    <div class="star--empty"></div>
-                <?php endforeach; ?>
-                <!-- EMPTY STARS LOOP -->
+                <?php if ($empty_stars_arr === 0) :?>
+                <?php else : ?>
+                    <!-- EMPTY STARS LOOP -->
+                    <?php foreach($empty_stars_arr as $value): ?>
+                        <div class="star--empty"></div>
+                    <?php endforeach; ?>
+                    <!-- EMPTY STARS LOOP -->
+                <?php endif; ?>
             </div>
         </div>
         <div class="review_list_quote--container d-flex justify-content-center align-items-center">
