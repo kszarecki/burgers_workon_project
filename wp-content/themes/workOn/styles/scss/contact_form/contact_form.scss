@@ -1,0 +1,17 @@
+#wpforms-192,
+.wpforms-container,
+.wpforms-container-full {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto 2rem auto;
+    position: relative;
+    top: calc(10px - 60px);
+    padding: 2rem;
+    background: $primary_black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    @media only screen and (min-width: $breakpoints_xs) {
+        top: calc(10px - 120px);
+    }
+}

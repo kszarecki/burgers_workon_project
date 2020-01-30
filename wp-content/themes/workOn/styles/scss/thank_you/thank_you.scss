@@ -64,7 +64,7 @@
 
             & > thead > tr > th:last-child,
             & > tbody > tr > td:last-child,
-            & > tfoot > tr > td, {
+            & > tfoot > tr > td {
                 text-align: right;
             }
         }

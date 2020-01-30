@@ -12,6 +12,12 @@
 <?php endif; ?>
 <!-- END DISPLAY CHECKOUT -->
 
+<!-- DISPLAY CONTACT -->
+<?php if (get_post()->post_title === 'Napisz do nas') : ?>
+    <?php echo do_shortcode('[wpforms id="192"]'); ?>
+<?php endif; ?>
+<!-- END DISPLAY CONTACT -->
+
 <!-- DISPLAY REVIEWS -->
 <?php if (get_post()->post_title === 'Opinie Klientów') : ?>
 

@@ -11,7 +11,8 @@
 .woocommerce-page .woocommerce-info .button,
 .woocommerce-page .woocommerce-message .button,
 .woocommerce button.button:disabled,
-.woocommerce button.button:disabled[disabled] {
+.woocommerce button.button:disabled[disabled],
+#wpforms-submit-192 {
     position: relative;
     width: 255px!important;
     height: 45px;
@@ -98,5 +99,15 @@
 
     &:before {
         border-bottom-left-radius: 0px;
+    }
+}
+
+#wpforms-submit-192 {
+    background: $primary_light_brown;
+    color: $primary_black;
+
+    &:hover {
+        background: $primary_white;
+        color: $primary_brown;
     }
 }
