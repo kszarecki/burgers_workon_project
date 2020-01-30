@@ -1,0 +1,102 @@
+.woocommerce-order {
+    & > p.woocommerce-notice {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    & > ul.woocommerce-order-overview {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        padding: 0;
+
+        @media only screen and (min-width: $breakpoints_sm) {
+            flex-flow: row nowrap;
+        }
+
+        & > li {
+            margin-bottom: 1rem;
+            padding-left: 0.5rem;
+            border-right: none;
+
+            @media only screen and (min-width: $breakpoints_sm) {
+                margin-bottom: 0;
+                margin-right: 1.5rem;
+                padding-right: 1.5rem;
+                padding-left: 0;
+                border-right: 1px dashed $primary_brown;
+            }
+
+            & > strong {
+                margin-top: 1rem;
+            }
+        }
+
+        & > li:last-child {
+            margin-right: 0!important;
+            padding-right: 0!important;
+        }
+
+    }
+
+    & > section.woocommerce-order-details {
+        & > h2 {
+            font-weight: $font_bold;
+            margin-bottom: 2rem;
+        }
+
+        & > table {
+            background: #FFF;
+            border-collapse: separate;
+            border-spacing: unset;
+
+            & > thead > tr {
+                background: $primary_brown;
+                color: $primary_light_brown;
+                height: 60px;
+            }
+
+            & > tbody > tr > td,
+            & > tfoot > tr > td,
+            & > tfoot > tr > th {
+                padding: 1.5rem 12px!important;
+            }
+
+            & > thead > tr > th:last-child,
+            & > tbody > tr > td:last-child,
+            & > tfoot > tr > td, {
+                text-align: right;
+            }
+        }
+    }
+
+    section.woocommerce-customer-details {
+        & > section {
+            & > .woocommerce-column--billing-address,
+            & > .woocommerce-column--shipping-address {
+                width: 100%;
+                max-width: 100%;
+                float: unset;
+                margin: 1.5rem 0;
+                padding: 0;
+
+                & > h2 {
+                    font-weight: $font_bold;
+                    margin-bottom: 2rem;
+                }
+
+                & > address {
+                    background: #FFF;
+                }
+            }
+
+            & > .woocommerce-column--shipping-address > h2 {
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+td.woocommerce-table__product-name td.product-name {
+    color: $primary_brown;
+}

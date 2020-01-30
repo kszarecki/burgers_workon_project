@@ -157,9 +157,7 @@
 
     & > a {
         cursor: default;
-    }
-
-    & > a > button {
+        text-decoration: none;
         margin: 4rem auto;
 
         @media only screen and (min-width: $breakpoints_sm) {

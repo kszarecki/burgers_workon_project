@@ -1,0 +1,28 @@
+.woocommerce div.product {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+
+    @media only screen and (min-width: $breakpoints_sm) {
+        max-width: 900px;
+    }
+
+    & > div.images.woocommerce-product-gallery {
+        width: 100%!important;
+        margin: 0 0 2.5rem 0;
+
+        @media only screen and (min-width: $breakpoints_sm) {
+            width: 45%!important;
+            margin: 0;
+        }
+    }
+
+    & > div.summary > form.cart {
+        display: flex;
+        justify-content: center;
+
+        @media only screen and (min-width: $breakpoints_sm) {
+            justify-content: flex-start;
+        }
+    }
+}

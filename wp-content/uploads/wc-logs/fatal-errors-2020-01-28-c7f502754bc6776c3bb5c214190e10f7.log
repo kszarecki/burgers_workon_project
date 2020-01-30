@@ -1,0 +1,206 @@
+2020-01-28T08:54:12+00:00 CRITICAL syntax error, unexpected '}' w /var/www/html/burgers_workon_project/wp-content/themes/workOn/functions.php w linii 48
+
+2020-01-28T08:56:12+00:00 CRITICAL syntax error, unexpected '}' w /var/www/html/burgers_workon_project/wp-content/themes/workOn/functions.php w linii 54
+
+2020-01-28T09:51:35+00:00 CRITICAL Uncaught Error: Call to undefined function is_products_page() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:32
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 32
+
+2020-01-28T09:51:38+00:00 CRITICAL Uncaught Error: Call to undefined function is_products_page() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:32
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 32
+
+2020-01-28T09:51:40+00:00 CRITICAL Uncaught Error: Call to undefined function is_products_page() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:32
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 32
+
+2020-01-28T09:52:24+00:00 CRITICAL Uncaught Error: Call to undefined function is_products_page() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:32
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 32
+
+2020-01-28T09:52:25+00:00 CRITICAL Uncaught Error: Call to undefined function is_products_page() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:32
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 32
+
+2020-01-28T09:53:17+00:00 CRITICAL Uncaught Error: Call to undefined function is_products_page() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:32
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 32
+
+2020-01-28T09:53:18+00:00 CRITICAL Uncaught Error: Call to undefined function is_products_page() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:32
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 32
+
+2020-01-28T09:53:18+00:00 CRITICAL Uncaught Error: Call to undefined function is_products_page() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:32
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 32
+
+2020-01-28T09:53:19+00:00 CRITICAL Uncaught Error: Call to undefined function is_products_page() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:32
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 32
+
+2020-01-28T09:53:19+00:00 CRITICAL Uncaught Error: Call to undefined function is_products_page() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:32
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 32
+
+2020-01-28T09:53:25+00:00 CRITICAL Uncaught Error: Call to undefined function is_products_page() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:32
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 32
+
+2020-01-28T09:53:26+00:00 CRITICAL Uncaught Error: Call to undefined function is_products_page() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:32
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 32
+
+2020-01-28T09:53:28+00:00 CRITICAL Uncaught Error: Call to undefined function is_products_page() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:32
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 32
+
+2020-01-28T09:55:30+00:00 CRITICAL Uncaught Error: Call to undefined function is_products() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:32
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 32
+
+2020-01-28T09:55:38+00:00 CRITICAL Uncaught Error: Call to undefined function is_products() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:32
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 32
+
+2020-01-28T09:55:39+00:00 CRITICAL Uncaught Error: Call to undefined function is_products() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php:32
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(722): require_once()
+#1 /var/www/html/burgers_workon_project/wp-includes/template.php(671): load_template()
+#2 /var/www/html/burgers_workon_project/wp-includes/general-template.php(41): locate_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php(1): get_header()
+#4 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 32
+
+2020-01-28T10:37:09+00:00 CRITICAL syntax error, unexpected '<', expecting end of file w /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php w linii 51
+
+2020-01-28T10:37:13+00:00 CRITICAL syntax error, unexpected '<', expecting end of file w /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php w linii 51
+
+2020-01-28T10:37:21+00:00 CRITICAL syntax error, unexpected '<', expecting end of file w /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php w linii 51
+
+2020-01-28T10:37:24+00:00 CRITICAL syntax error, unexpected '<', expecting end of file w /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php w linii 51
+
+2020-01-28T11:09:06+00:00 CRITICAL syntax error, unexpected ''Zamów burger'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' w /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/loop/add-to-cart.php w linii 30
+

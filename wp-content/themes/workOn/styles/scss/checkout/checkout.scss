@@ -1,0 +1,93 @@
+.woocommerce-form-coupon-toggle {
+    display: none;
+}
+
+.woocommerce-billing-fields,
+.woocommerce-shipping-fields {
+    & > h3,
+    & > h3 > label > span {
+        font-weight: $font_bold;
+        margin-bottom: 2rem;
+    }
+}
+
+.woocommerce-shipping-fields {
+    & > h3 {
+        margin-top: 2rem;
+    }
+}
+
+.woocommerce-billing-fields__field-wrapper,
+.woocommerce-shipping-fields__field-wrapper {
+
+    & > p {
+        width: 100%!important;
+        margin: 0 0 1rem 0!important;
+        float: unset;
+        display: block;
+
+        & > label {
+            display: none!important;
+        }
+    }
+}
+
+.woocommerce-additional-fields {
+    & > .woocommerce-additional-fields__field-wrapper {
+
+        & > p {
+            width: 100%;
+            float: unset;
+            display: block;
+            margin-top: 0;
+
+            & > label {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
+
+ul.payment_methods > li {
+    padding: 1.5rem 1rem!important;
+}
+
+#order_comments {
+    height: 6rem;
+}
+
+#order_review_heading {
+    font-weight: $font_bold;
+    margin: 1.5rem 0 2rem 0;
+}
+
+table.woocommerce-checkout-review-order-table {
+    background: #FFF;
+    border-collapse: separate;
+    border-spacing: unset;
+
+    & > thead > tr {
+        background: $primary_brown;
+        color: $primary_light_brown;
+        height: 60px;
+
+        & > th:last-child {
+            text-align: right;
+        }
+    }
+
+    & > tbody > tr > td,
+    & > tfoot > tr > td,
+    & > tfoot > tr > th {
+        padding: 1.5rem 12px!important;
+    }
+
+    & > tbody > tr > td:last-child,
+    & > tfoot > tr > td {
+        text-align: right;
+    }
+}
+
+.woocommerce-checkout #payment div.form-row {
+    padding: 2rem 1rem;
+}

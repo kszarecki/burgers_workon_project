@@ -1,0 +1,112 @@
+.cart-empty.woocommerce-info {
+
+    border-top-color: $primary_brown;
+    padding: 1.5rem 0;
+
+    &:before {
+        display: none;
+    }
+}
+
+.woocommerce-cart-form {
+
+    & > table {
+        background: #FFF;
+        color: $primary_black;
+        table-layout: fixed;
+
+        & > thead > tr {
+            height: 60px;
+            background: $primary_brown;
+            color: $primary_light_brown;
+        }
+
+        & > thead > tr > th:first-child {
+            width: 10%;
+        }
+
+        & > tbody > tr:nth-child(even):not(:last-child) {
+            background: $primary_white;
+        }
+
+        & > tbody > tr > td.actions {
+            padding: 2rem 12px;
+        }
+
+        & > tbody > tr > td.actions > div.coupon {
+            display: none;
+        }
+
+        & > tbody > tr > td {
+
+            @media only screen and (min-width: $breakpoints_md) {
+                height: 120px;
+            }
+        }
+
+        & > tbody > tr > td.product-remove > a{
+            color: $primary_brown!important;
+
+            &:hover {
+                background: none;
+                color: $primary_black!important;
+            }
+        }
+
+        & > tbody > tr > td.product-thumbnail > a > img {
+            width: auto;
+            height: 100px;
+        }
+
+        & > tbody > tr > td.product-name > a {
+            color: $primary_brown;
+        }
+    }
+}
+
+.cart-collaterals {
+
+    & > .cart_totals {
+        float: left!important;
+        width: 100%!important;
+
+        @media only screen and (min-width: $breakpoints_sm) {
+            max-width: 500px;
+        }
+
+
+        & > h2 {
+            margin: 1.5rem 0 2rem 0;
+            color: $primary_black;
+            font-size: 34px;
+            font-weight: $font_bold;
+        }
+
+        & > table {
+            table-layout: fixed;
+            background: #FFF;
+
+            & > tbody > tr > td,
+            & > tbody > tr > th {
+                padding: 1.5rem 12px;
+            }
+
+            & > tbody > tr > th {
+                width: 20%!important;
+            }
+
+            & > tbody > tr > td {
+                text-align: right;
+            }
+        }
+
+        .wc-proceed-to-checkout {
+            margin: 2rem 0;
+        }
+    }
+}
+
+.woocommerce-shipping-destination,
+.woocommerce-shipping-calculator {
+    display: none;
+}

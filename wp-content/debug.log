@@ -1,0 +1,29 @@
+[29-Jan-2020 23:31:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php:33
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Http.php(24): OpenPayU_HttpCurl::doPayuRequest()
+#1 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(63): OpenPayU_Http::doPost()
+#2 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(35): OpenPayU_Oauth::retrieveAccessToken()
+#3 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/AuthType/Oauth.php(22): OpenPayU_Oauth::getAccessToken()
+#4 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/OpenPayU.php(53): AuthType_Oauth->__construct()
+#5 /var/www/html/burgers_workon_project/wp-con in /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php on line 33
+[29-Jan-2020 23:49:19 UTC] PHP Notice:  Korzystanie z get_product uznawane jest za <strong>przestarzałe</strong> od wersji 3.0! Zamiast tego użyj wc_get_product. in /var/www/html/burgers_workon_project/wp-includes/functions.php on line 4648
+[29-Jan-2020 23:49:19 UTC] PHP Notice:  Undefined variable: loop in /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php on line 30
+[29-Jan-2020 23:49:19 UTC] PHP Notice:  Trying to get property 'post' of non-object in /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php on line 30
+[29-Jan-2020 23:49:19 UTC] PHP Notice:  Trying to get property 'ID' of non-object in /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php on line 30
+[29-Jan-2020 23:49:19 UTC] PHP Notice:  Undefined variable: loop in /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php on line 30
+[29-Jan-2020 23:49:19 UTC] PHP Notice:  Trying to get property 'post' of non-object in /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php on line 30
+[29-Jan-2020 23:49:19 UTC] PHP Notice:  Trying to get property 'ID' of non-object in /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php on line 30
+[29-Jan-2020 23:49:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php on line 52
+[29-Jan-2020 23:49:19 UTC] PHP Notice:  Undefined variable: loop in /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php on line 30
+[29-Jan-2020 23:49:19 UTC] PHP Notice:  Trying to get property 'post' of non-object in /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php on line 30
+[29-Jan-2020 23:49:19 UTC] PHP Notice:  Trying to get property 'ID' of non-object in /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php on line 30
+[29-Jan-2020 23:49:34 UTC] PHP Notice:  Undefined variable: loop in /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php on line 36
+[29-Jan-2020 23:49:34 UTC] PHP Notice:  Trying to get property 'post' of non-object in /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php on line 36
+[29-Jan-2020 23:49:34 UTC] PHP Notice:  Trying to get property 'ID' of non-object in /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php on line 36
+[29-Jan-2020 23:49:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php on line 58
+[29-Jan-2020 23:49:34 UTC] PHP Notice:  Undefined variable: loop in /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php on line 36
+[29-Jan-2020 23:49:34 UTC] PHP Notice:  Trying to get property 'post' of non-object in /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php on line 36
+[29-Jan-2020 23:49:34 UTC] PHP Notice:  Trying to get property 'ID' of non-object in /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php on line 36
+[29-Jan-2020 23:49:34 UTC] PHP Notice:  Undefined variable: loop in /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php on line 36
+[29-Jan-2020 23:49:34 UTC] PHP Notice:  Trying to get property 'post' of non-object in /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php on line 36
+[29-Jan-2020 23:49:34 UTC] PHP Notice:  Trying to get property 'ID' of non-object in /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php on line 36

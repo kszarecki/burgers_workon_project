@@ -30,7 +30,7 @@ body {
     scroll-behavior: smooth;
 
     & > main {
-        padding-bottom: 200;
+        padding-bottom: 200px;
 
         @media only screen and (min-width: $breakpoints_xs) {
             padding-bottom: 280px;
@@ -38,6 +38,14 @@ body {
 
         @media only screen and (min-width: $breakpoints_md) {
             padding-bottom: 350px;
+        }
+    }
+
+    & > main.page--container > section.page_overlay--container {
+        & > .woocommerce {
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
         }
     }
 
@@ -63,6 +71,11 @@ body {
 @import "./review_slider/review_slider";
 @import "./banner/banner";
 @import "./menu_modal/menu_modal";
+@import "./notices/notices";
+@import "./product_details/product_details";
+@import "./cart/cart";
+@import "./checkout/checkout";
+@import "./thank_you/thank_you";
 @import "./footer/footer";
 
 .not_found_info--container {

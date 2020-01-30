@@ -71,9 +71,7 @@
 
         & > a {
             cursor: default;
-        }
-
-        & > a > button {
+            text-decoration: none;
             margin: 1.25rem auto 0 auto;
         }
     }

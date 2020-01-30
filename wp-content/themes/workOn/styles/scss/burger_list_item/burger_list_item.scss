@@ -19,7 +19,7 @@
         text-align: right!important;
     }
 
-    &:nth-child(odd) > .burger_list_item--info > button {
+    &:nth-child(odd) > .burger_list_item--info > a.main_button {
         left: 0!important;
     }
 
@@ -160,10 +160,39 @@
             margin: 2rem auto;
         }
 
-        & > button {
-            position: absolute;
+        & > a.added_to_cart.wc-forward {
+            color: $primary_black;
+            margin-bottom: 1rem;
+            text-decoration: none;
+            transition: color 200ms ease-in;
+
+            @media only screen and (min-width: $breakpoints_md) {
+                margin-bottom: 2rem;
+            }
+
+            &:hover {
+                color: $primary_brown;
+                transition: color 200ms ease-out;
+            }
+        }
+
+        & > a.main_button {
+            position: absolute!important;
             bottom: 0;
             right: 0;
+            left: 0;
+            margin: 0 auto;
+            border-bottom-left-radius: 0!important;
+            border-bottom-right-radius: 0!important;
+
+            @media only screen and (min-width: $breakpoints_sm) {
+                margin: 0;
+                left: auto;
+            }
+
+            &:before {
+                border-bottom-left-radius: 0!important;
+            }
         }
 
     }

@@ -1,24 +1,57 @@
-.main_button {
+.main_button,
+.single_add_to_cart_button,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce button.button,
+.woocommerce a.button,
+.woocommerce button.button.alt,
+.woocommerce .woocommerce-error .button,
+.woocommerce .woocommerce-info .button,
+.woocommerce .woocommerce-message .button,
+.woocommerce-page .woocommerce-error .button,
+.woocommerce-page .woocommerce-info .button,
+.woocommerce-page .woocommerce-message .button,
+.woocommerce button.button:disabled,
+.woocommerce button.button:disabled[disabled] {
     position: relative;
-    width: 255px;
+    width: 255px!important;
     height: 45px;
     border: none;
     border-radius: 20px;
     background: $primary_black;
     box-shadow: $primary_box_shadow;
 
-    font-size: $font_body_bold;
+    font-family: $font_body_bold;
+    font-size: 0.9rem;
     font-weight: $font_bold;
     color: $primary_light_brown;
+    text-decoration: none!important;
+    text-align: center;
 
-    padding-left: 98px;
     cursor: pointer;
     transition: all 0.2s ease-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 98px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media only screen and (min-width: $breakpoints_sm) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
 
     &:hover {
         background: $primary_light_brown;
         color: $primary_black;
         transition: all 0.2s ease-out;
+        text-decoration: none;
     }
 
     &:hover:after {

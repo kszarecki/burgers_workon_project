@@ -1,0 +1,219 @@
+2020-01-29T14:43:39+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_post_meta() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php:39
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(724): require()
+#1 /var/www/html/burgers_workon_project/wp-content/plugins/woocommerce/includes/wc-core-functions.php(195): load_template()
+#2 /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/archive-product.php(56): wc_get_template_part()
+#3 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#4 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#6 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php w linii 39
+
+2020-01-29T14:43:41+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_post_meta() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php:39
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(724): require()
+#1 /var/www/html/burgers_workon_project/wp-content/plugins/woocommerce/includes/wc-core-functions.php(195): load_template()
+#2 /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/archive-product.php(56): wc_get_template_part()
+#3 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#4 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#6 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php w linii 39
+
+2020-01-29T15:35:25+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_thumbnail() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php:36
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(724): require()
+#1 /var/www/html/burgers_workon_project/wp-content/plugins/woocommerce/includes/wc-core-functions.php(195): load_template()
+#2 /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/archive-product.php(56): wc_get_template_part()
+#3 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#4 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#6 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php w linii 36
+
+2020-01-29T15:35:50+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_thumbnail_url() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php:36
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(724): require()
+#1 /var/www/html/burgers_workon_project/wp-content/plugins/woocommerce/includes/wc-core-functions.php(195): load_template()
+#2 /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/archive-product.php(56): wc_get_template_part()
+#3 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#4 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#6 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php w linii 36
+
+2020-01-29T15:35:52+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_thumbnail_url() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php:36
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template.php(724): require()
+#1 /var/www/html/burgers_workon_project/wp-content/plugins/woocommerce/includes/wc-core-functions.php(195): load_template()
+#2 /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/archive-product.php(56): wc_get_template_part()
+#3 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#4 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#6 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/content-product.php w linii 36
+
+2020-01-29T15:40:17+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 36
+
+2020-01-29T15:40:18+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' w /var/www/html/burgers_workon_project/wp-content/themes/workOn/header.php w linii 36
+
+2020-01-29T17:26:06+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post as array in /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php:96
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include()
+#1 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php w linii 96
+
+2020-01-29T17:26:16+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post as array in /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php:96
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include()
+#1 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php w linii 96
+
+2020-01-29T17:26:38+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post as array in /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php:96
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include()
+#1 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/front-page.php w linii 96
+
+2020-01-29T18:06:17+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_page(), 0 passed in /var/www/html/burgers_workon_project/wp-content/themes/workOn/page.php on line 16 and at least 1 expected in /var/www/html/burgers_workon_project/wp-includes/post.php:4867
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-content/themes/workOn/page.php(16): get_page()
+#1 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#2 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#3 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#4 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-includes/post.php w linii 4867
+
+2020-01-29T18:06:39+00:00 CRITICAL Uncaught Error: Call to undefined function get_current_site() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/page.php:16
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include()
+#1 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/page.php w linii 16
+
+2020-01-29T18:06:40+00:00 CRITICAL Uncaught Error: Call to undefined function get_current_site() in /var/www/html/burgers_workon_project/wp-content/themes/workOn/page.php:16
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include()
+#1 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/page.php w linii 16
+
+2020-01-29T18:08:16+00:00 CRITICAL syntax error, unexpected ';', expecting ')' w /var/www/html/burgers_workon_project/wp-content/themes/workOn/page.php w linii 16
+
+2020-01-29T21:06:48+00:00 CRITICAL Uncaught Error: Call to a member function get_label() on string in /var/www/html/burgers_workon_project/wp-content/plugins/woocommerce/includes/wc-cart-functions.php:345
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/cart/cart-shipping.php(40): wc_cart_totals_shipping_method_label()
+#1 /var/www/html/burgers_workon_project/wp-content/plugins/woocommerce/includes/wc-core-functions.php(249): include('/var/www/html/b...')
+#2 /var/www/html/burgers_workon_project/wp-content/plugins/woocommerce/includes/wc-cart-functions.php(233): wc_get_template()
+#3 /var/www/html/burgers_workon_project/wp-content/themes/workOn/woocommerce/cart/cart-totals.php(45): wc_cart_totals_shipping_html()
+#4 /var/www/html/burgers_workon_project/wp-content/plugins/woocommerce/includes/wc-core-functions.php(249): include('/var/www/html/b...')
+#5 /var/www/html/burgers_workon_project/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2010): wc_get_template()
+#6 /var/www/html/burgers_worko w /var/www/html/burgers_workon_project/wp-content/plugins/woocommerce/includes/wc-cart-functions.php w linii 345
+
+2020-01-29T23:17:50+00:00 CRITICAL Uncaught Error: Call to undefined function curl_init() in /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php:33
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Http.php(24): OpenPayU_HttpCurl::doPayuRequest()
+#1 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(63): OpenPayU_Http::doPost()
+#2 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(35): OpenPayU_Oauth::retrieveAccessToken()
+#3 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/AuthType/Oauth.php(22): OpenPayU_Oauth::getAccessToken()
+#4 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/OpenPayU.php(53): AuthType_Oauth->__construct()
+#5 /var/www/html/burgers_workon_project/wp-con w /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php w linii 33
+
+2020-01-29T23:18:03+00:00 CRITICAL Uncaught Error: Call to undefined function curl_init() in /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php:33
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Http.php(24): OpenPayU_HttpCurl::doPayuRequest()
+#1 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(63): OpenPayU_Http::doPost()
+#2 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(35): OpenPayU_Oauth::retrieveAccessToken()
+#3 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/AuthType/Oauth.php(22): OpenPayU_Oauth::getAccessToken()
+#4 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/OpenPayU.php(53): AuthType_Oauth->__construct()
+#5 /var/www/html/burgers_workon_project/wp-con w /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php w linii 33
+
+2020-01-29T23:20:25+00:00 CRITICAL Uncaught Error: Call to undefined function curl_init() in /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php:33
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Http.php(24): OpenPayU_HttpCurl::doPayuRequest()
+#1 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(63): OpenPayU_Http::doPost()
+#2 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(35): OpenPayU_Oauth::retrieveAccessToken()
+#3 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/AuthType/Oauth.php(22): OpenPayU_Oauth::getAccessToken()
+#4 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/OpenPayU.php(53): AuthType_Oauth->__construct()
+#5 /var/www/html/burgers_workon_project/wp-con w /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php w linii 33
+
+2020-01-29T23:22:37+00:00 CRITICAL Uncaught Error: Call to undefined function curl_init() in /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php:33
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Http.php(24): OpenPayU_HttpCurl::doPayuRequest()
+#1 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(63): OpenPayU_Http::doPost()
+#2 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(35): OpenPayU_Oauth::retrieveAccessToken()
+#3 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/AuthType/Oauth.php(22): OpenPayU_Oauth::getAccessToken()
+#4 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/OpenPayU.php(53): AuthType_Oauth->__construct()
+#5 /var/www/html/burgers_workon_project/wp-con w /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php w linii 33
+
+2020-01-29T23:24:19+00:00 CRITICAL Uncaught Error: Call to undefined function curl_init() in /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php:33
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Http.php(24): OpenPayU_HttpCurl::doPayuRequest()
+#1 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(63): OpenPayU_Http::doPost()
+#2 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(35): OpenPayU_Oauth::retrieveAccessToken()
+#3 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/AuthType/Oauth.php(22): OpenPayU_Oauth::getAccessToken()
+#4 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/OpenPayU.php(53): AuthType_Oauth->__construct()
+#5 /var/www/html/burgers_workon_project/wp-con w /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php w linii 33
+
+2020-01-29T23:24:33+00:00 CRITICAL Uncaught Error: Call to undefined function curl_init() in /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php:33
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Http.php(24): OpenPayU_HttpCurl::doPayuRequest()
+#1 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(63): OpenPayU_Http::doPost()
+#2 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(35): OpenPayU_Oauth::retrieveAccessToken()
+#3 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/AuthType/Oauth.php(22): OpenPayU_Oauth::getAccessToken()
+#4 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/OpenPayU.php(53): AuthType_Oauth->__construct()
+#5 /var/www/html/burgers_workon_project/wp-con w /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php w linii 33
+
+2020-01-29T23:27:18+00:00 CRITICAL Uncaught Error: Call to undefined function curl_init() in /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php:33
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Http.php(24): OpenPayU_HttpCurl::doPayuRequest()
+#1 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(63): OpenPayU_Http::doPost()
+#2 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(35): OpenPayU_Oauth::retrieveAccessToken()
+#3 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/AuthType/Oauth.php(22): OpenPayU_Oauth::getAccessToken()
+#4 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/OpenPayU.php(53): AuthType_Oauth->__construct()
+#5 /var/www/html/burgers_workon_project/wp-con w /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php w linii 33
+
+2020-01-29T23:29:00+00:00 CRITICAL Uncaught Error: Call to undefined function curl_init() in /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php:33
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Http.php(24): OpenPayU_HttpCurl::doPayuRequest()
+#1 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(63): OpenPayU_Http::doPost()
+#2 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(35): OpenPayU_Oauth::retrieveAccessToken()
+#3 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/AuthType/Oauth.php(22): OpenPayU_Oauth::getAccessToken()
+#4 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/OpenPayU.php(53): AuthType_Oauth->__construct()
+#5 /var/www/html/burgers_workon_project/wp-con w /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php w linii 33
+
+2020-01-29T23:29:29+00:00 CRITICAL Uncaught Error: Call to undefined function curl_init() in /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php:33
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Http.php(24): OpenPayU_HttpCurl::doPayuRequest()
+#1 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(63): OpenPayU_Http::doPost()
+#2 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(35): OpenPayU_Oauth::retrieveAccessToken()
+#3 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/AuthType/Oauth.php(22): OpenPayU_Oauth::getAccessToken()
+#4 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/OpenPayU.php(53): AuthType_Oauth->__construct()
+#5 /var/www/html/burgers_workon_project/wp-con w /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php w linii 33
+
+2020-01-29T23:29:59+00:00 CRITICAL Uncaught Error: Call to undefined function curl_init() in /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php:33
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Http.php(24): OpenPayU_HttpCurl::doPayuRequest()
+#1 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(63): OpenPayU_Http::doPost()
+#2 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(35): OpenPayU_Oauth::retrieveAccessToken()
+#3 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/AuthType/Oauth.php(22): OpenPayU_Oauth::getAccessToken()
+#4 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/OpenPayU.php(53): AuthType_Oauth->__construct()
+#5 /var/www/html/burgers_workon_project/wp-con w /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php w linii 33
+
+2020-01-29T23:31:17+00:00 CRITICAL Uncaught Error: Call to undefined function curl_init() in /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php:33
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Http.php(24): OpenPayU_HttpCurl::doPayuRequest()
+#1 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(63): OpenPayU_Http::doPost()
+#2 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/Oauth/Oauth.php(35): OpenPayU_Oauth::retrieveAccessToken()
+#3 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/AuthType/Oauth.php(22): OpenPayU_Oauth::getAccessToken()
+#4 /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/OpenPayU.php(53): AuthType_Oauth->__construct()
+#5 /var/www/html/burgers_workon_project/wp-con w /var/www/html/burgers_workon_project/wp-content/plugins/woo-payu-payment-gateway/includes/lib/OpenPayU/HttpCurl.php w linii 33
+

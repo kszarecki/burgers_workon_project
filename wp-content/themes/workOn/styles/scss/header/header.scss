@@ -51,8 +51,7 @@ header {
         & > div > a {
             position: relative;
 
-            &:after {
-                content: attr(data-counter);
+            & > span {
                 position: absolute;
                 display: flex;
                 justify-content: center;
@@ -63,7 +62,7 @@ header {
                 width: 20px;
                 height: 20px;
                 background: $primary_light_brown;
-                font-size: 14px;
+                font-size: 12px;
                 font-weight: $font_bold;
                 z-index: 1;
                 color: $primary_black;
