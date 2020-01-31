@@ -46,6 +46,7 @@ body {
             width: 90%;
             max-width: 900px;
             margin: 0 auto;
+            padding: 0 0.5rem;
         }
     }
 
@@ -77,6 +78,7 @@ body {
 @import "./checkout/checkout";
 @import "./thank_you/thank_you";
 @import "./contact_form/contact_form";
+@import "./burger_maker/burger_maker";
 @import "./footer/footer";
 
 .not_found_info--container {
@@ -115,6 +117,15 @@ body {
             margin: 2rem 0 1.5rem;
         }
     }
+}
+
+div.quantity {
+    margin: 0 0 1rem 0!important;
+    float: none!important;
+}
+
+div.product > div.summary> form.cart {
+    display: inherit!important;
 }
 
 // END GLOBAL STYLES

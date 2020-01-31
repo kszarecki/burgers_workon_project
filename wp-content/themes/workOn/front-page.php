@@ -3,9 +3,8 @@
 <!-- BURGER LIST DISPLAY -->
 
 <?php 
-$product = get_product(get_the_ID());
 $reviews = array('posts_per_page' => -1, 'post_type' => 'reviews', 'orderby' => 'title', 'order' => 'ASC');
-$products = array('posts_per_page' => -1, 'post_type' => 'product', 'orderby' => 'title');
+$products = array('posts_per_page' => 3, 'post_type' => 'product', 'orderby' => 'title', 'product_cat' => 'burgery');
 $wc_query_products = new WP_Query($products);
 $wc_query_reviews = new WP_Query($reviews);
 ?>

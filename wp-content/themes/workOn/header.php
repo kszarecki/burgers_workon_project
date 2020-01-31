@@ -26,7 +26,7 @@
             </a>
             <div class="d-flex align-items-center">
                 <a href="<?php echo get_permalink( get_page_by_title( 'Twój Koszyk' ) );?>" data-counter="0">
-                    <span><?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?></span>
+                    <span class='cart_counter'><?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?></span>
                     <img id="cart_icon" src="<?php echo MEDIA . '/svg/cart_icon.svg'; ?>" alt="cart_icon">
                 </a>
                 <img id="hamburger_icon" class='img-fluid' src="<?php echo MEDIA . '/svg/menu_icon.svg'; ?>" alt="menu_icon">

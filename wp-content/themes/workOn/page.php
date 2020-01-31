@@ -1,3 +1,6 @@
+<?php if (get_post()->post_title === 'Burger Maker') : ?>
+    <?php acf_form_head(); ?>
+<?php endif; ?>
 <?php get_header(); ?>
 
 <!-- DISPLAY CART -->
@@ -88,5 +91,50 @@
 
 <?php endif; ?>
 <!-- END DISPLAY REVIEWS -->
+
+<!-- DISPLAY BURGER MAKER -->
+<?php if (get_post()->post_title === 'Burger Maker') : ?>
+<?php
+$query = new WC_Product_Query( array(
+    'limit' => 1,
+    'category' => array( 'burger-maker' )
+) );
+$burger_maker = $query->get_products()[0];
+$field = get_field_object('field_5e2ffcf74cb91');
+$fields_checked = get_field_objects($burger_maker->get_id())['skladniki']['value'];
+?>
+    <div class="burger_maker--container">
+
+        <!-- BURGER MAKER FORM -->
+
+        <p id='current_ingredients'>Wybrane składniki: 
+
+            <?php foreach($fields_checked as $key => $ingredient) : ?>
+                <span>
+                    <?php
+                        if ($key === 0) {
+                            echo ' ' . $ingredient['value'];
+                        } else {
+                            echo '-- ' . $ingredient['value'];
+                        }
+                    ?>
+                </span>
+            <?php endforeach; ?>
+        </p>
+
+        <?php acf_form(array(
+            'id' => 'acf-form',
+            'post_id' => $burger_maker->get_id()
+        )); ?>
+
+        <!-- END BURGER MAKER FORM -->
+
+        <?php $id = $burger_maker-> get_id(); 
+        echo do_shortcode(
+            '[enh_ajax_add_to_cart_button product="'. $id .'" button_text="Zamów Burger" title="none" quantity="1"]'
+        ); ?>
+    </div>
+<?php endif; ?>
+<!-- END DISPLAY BURGER MAKER -->
 
 <?php get_footer(); ?>

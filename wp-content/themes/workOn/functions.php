@@ -128,3 +128,14 @@ function my_custom_checkout_field_process() {
         wc_add_notice( "Nieprawidłowy kod pocztowy."  ,'error' );
     }
 }
+
+// UPDATE CART COUNT
+add_filter( 'woocommerce_add_to_cart_fragments', 'iconic_cart_count_fragments', 10, 1 );
+ 
+function iconic_cart_count_fragments( $fragments ) {
+
+    $fragments['span.cart_counter'] = '<span class="cart_counter">' . WC()->cart->get_cart_contents_count() . '</span>';
+
+    return $fragments;
+
+}

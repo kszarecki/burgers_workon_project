@@ -12,7 +12,8 @@
 .woocommerce-page .woocommerce-message .button,
 .woocommerce button.button:disabled,
 .woocommerce button.button:disabled[disabled],
-#wpforms-submit-192 {
+#wpforms-submit-192,
+.simple_add_to_cart_button {
     position: relative;
     width: 255px!important;
     height: 45px;
@@ -109,5 +110,21 @@
     &:hover {
         background: $primary_white;
         color: $primary_brown;
+    }
+}
+
+a.added_to_cart.wc-forward {
+    color: $primary_black;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    transition: color 200ms ease-in;
+
+    @media only screen and (min-width: $breakpoints_md) {
+        margin-bottom: 2rem;
+    }
+
+    &:hover {
+        color: $primary_brown;
+        transition: color 200ms ease-out;
     }
 }

@@ -1,0 +1,52 @@
+2020-01-31T00:04:25+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in /var/www/html/burgers_workon_project/wp-content/themes/workOn/page.php:106
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include()
+#1 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/page.php w linii 106
+
+2020-01-31T00:04:33+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in /var/www/html/burgers_workon_project/wp-content/themes/workOn/page.php:106
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include()
+#1 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/page.php w linii 106
+
+2020-01-31T00:25:03+00:00 CRITICAL Uncaught Error: Call to a member function get_type() on null in /var/www/html/burgers_workon_project/wp-content/plugins/woocommerce/includes/wc-template-functions.php:1571
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-content/themes/workOn/page.php(134): woocommerce_template_single_add_to_cart()
+#1 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#2 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#3 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#4 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/plugins/woocommerce/includes/wc-template-functions.php w linii 1571
+
+2020-01-31T00:25:07+00:00 CRITICAL Uncaught Error: Call to a member function get_type() on null in /var/www/html/burgers_workon_project/wp-content/plugins/woocommerce/includes/wc-template-functions.php:1571
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-content/themes/workOn/page.php(134): woocommerce_template_single_add_to_cart()
+#1 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#2 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#3 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#4 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/plugins/woocommerce/includes/wc-template-functions.php w linii 1571
+
+2020-01-31T00:25:40+00:00 CRITICAL Uncaught Error: Call to a member function get_type() on null in /var/www/html/burgers_workon_project/wp-content/plugins/woocommerce/includes/wc-template-functions.php:1571
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-content/themes/workOn/page.php(134): woocommerce_template_single_add_to_cart()
+#1 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#2 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#3 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#4 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/plugins/woocommerce/includes/wc-template-functions.php w linii 1571
+
+2020-01-31T00:25:42+00:00 CRITICAL Uncaught Error: Call to a member function get_type() on null in /var/www/html/burgers_workon_project/wp-content/plugins/woocommerce/includes/wc-template-functions.php:1571
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-content/themes/workOn/page.php(134): woocommerce_template_single_add_to_cart()
+#1 /var/www/html/burgers_workon_project/wp-includes/template-loader.php(98): include('/var/www/html/b...')
+#2 /var/www/html/burgers_workon_project/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#3 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#4 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/plugins/woocommerce/includes/wc-template-functions.php w linii 1571
+

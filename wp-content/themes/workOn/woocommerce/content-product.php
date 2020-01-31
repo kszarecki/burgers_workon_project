@@ -19,8 +19,12 @@ defined( 'ABSPATH' ) || exit;
 
 global $product;
 
+$category_id = $product->get_category_ids();
+
+
+
 // Ensure visibility.
-if ( empty( $product ) || ! $product->is_visible() ) {
+if ( empty( $product ) || ! $product->is_visible() || $category_id[0] !== 19) {
 	return;
 }
 ?>

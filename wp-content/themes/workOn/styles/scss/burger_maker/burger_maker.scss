@@ -1,0 +1,141 @@
+.burger_maker--container {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    top: calc(10px - 60px);
+    padding-top: 2rem;
+
+    @media only screen and (min-width: $breakpoints_xs) {
+        top: calc(10px - 120px);
+    }
+
+    & > #message {
+        display: none;
+    }
+
+    & > #current_ingredients {
+        font-size: 1.25rem;
+        text-align: center;
+
+        & > span {
+            font-size: 1rem;
+        }
+    }
+
+    & > #acf-form {
+        background: #FFF;
+        border-radius: 5px;
+        margin-top: 2rem;
+
+        & > .acf-fields > #skladniki {
+            padding: 0;
+
+            & > .acf-label {
+                padding: 1rem 9px;
+                margin: 0;
+                background: $primary_brown;
+                color: $primary_light_brown;
+                font-size: 1rem;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+
+                & > label {
+                    margin: 0;
+                }
+            }
+
+            & > .acf-input {
+
+                & > ul > li {
+                    border-top: 1px solid rgba(0,0,0,.1);
+                    padding: 1.5rem 0.5rem;
+
+                    & > label {
+                        font-size: 1rem;
+                    }
+
+                    & label > input[type=checkbox] {
+                        width: 18px;
+                        height: 18px;
+                        position: relative;
+                        margin-right: 1.5rem;
+
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: 0;
+                            left: 0;
+                            margin: 0 auto;
+                            background-color: $primary_brown;
+                            display: inline-block;
+                            visibility: visible;
+                            width: 24px;
+                            height: 24px;
+                            border-radius: 5px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 5px;
+                        }
+
+                        &:checked:after {
+                            content: "\00a0\2714";
+                        }
+                    }
+                }
+
+                & > ul > li:nth-child(even) {
+                    background: $primary_white;
+                }
+            }
+        }
+
+        & > div.acf-form-submit {
+            position: relative;
+            height: 45px;
+            border-top: 1px solid rgba(0,0,0,.1);
+            display: flex;
+            align-items: center;
+            padding-left: 0.5rem;
+
+            & > input[type=submit] {
+                padding: 0 2.5rem;
+                height: 45px;
+                font-family: $font_body_bold;
+                font-size: 0.9rem;
+                font-weight: $font_bold;
+                position: absolute;
+                right: 0!important;
+                bottom: 0!important;
+                border: none;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-top-right-radius: 0px;
+                border-top-left-radius: 20px;
+
+                background: $primary_black;
+                color: $primary_light_brown;
+
+                transition: all 0.2s ease-out;
+
+                &:hover {
+                    background: $primary_light_brown;
+                    color: $primary_black;
+                    transition: all 0.2s ease-out;
+                }
+            }
+        }
+    }
+
+    & > .woocommerce-simple-add-to-cart,
+        .simple_button {
+        margin-top: 3.5rem!important;
+        
+        & > button {
+            margin-bottom: 2rem!important;
+        }
+    }
+}

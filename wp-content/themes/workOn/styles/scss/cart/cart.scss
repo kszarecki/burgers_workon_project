@@ -1,7 +1,9 @@
 .cart-empty.woocommerce-info {
 
     border-top-color: $primary_brown;
-    padding: 1.5rem 0;
+    padding: 1.5rem 0.5rem;
+    text-align: center;
+    margin: 1rem 0;
 
     &:before {
         display: none;
@@ -30,7 +32,11 @@
         }
 
         & > tbody > tr > td.actions {
-            padding: 2rem 12px;
+            padding: 2rem 0;
+
+            @media only screen and (min-width: $breakpoints_sm) {
+                padding: 2rem 12px;
+            }
         }
 
         & > tbody > tr > td.actions > div.coupon {
