@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Package Name\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-18 09:10+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+
+#. Description of the plugin
+msgid ""
+"Automatically updates cart page and mini cart when quantity is changed. "
+"Optionally turns off cart page notices."
+msgstr ""
+
+msgid "Support & suggestions"
+msgstr ""
+
+msgid "Rate this plugin"
+msgstr ""
+
+msgid "Update delay"
+msgstr ""
+
+msgid "Cart minimum quantity"
+msgstr ""
+
+msgid "Cart page notices"
+msgstr ""
+
+msgid ""
+"Time in miliseconds between the last quantity change and sending a request "
+"to update quantity on server (a spinning wheel is displayed when this happens). "
+"Allows changing the quantity multiple times with only one server request "
+"done in the end. Low values will result in the spinning wheel showing more "
+"than once when the changes are slow. High values will make the customers wait "
+"and wonder why the cart doesn't recalculate. How long the spinning wheel is "
+"displayed, is based entirely on the server response time."
+msgstr ""
+
+msgid ""
+"Change minimum product quantity on cart page from 0 to 1. If unchecked, 0 "
+"quantity is valid and such products are removed on cart update."
+msgstr ""
+
+msgid ""
+"Turn off notices on cart page, including \"Cart updated.\" and "
+"\"&lt;Product&gt; removed. Undo?\". Empty cart message will still be displayed."
+msgstr ""

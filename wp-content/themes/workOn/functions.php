@@ -17,6 +17,7 @@ add_action('wp_enqueue_scripts', 'theme_styles');
 
 // ADD SCRIPTS
 function theme_scripts(){
+    wp_enqueue_script( 'jquery' );
     wp_enqueue_script('scripts', SCRIPTS . '/app.js', array(), '1.0', true);
 }
 
@@ -137,5 +138,22 @@ function iconic_cart_count_fragments( $fragments ) {
     $fragments['span.cart_counter'] = '<span class="cart_counter">' . WC()->cart->get_cart_contents_count() . '</span>';
 
     return $fragments;
+}
 
+// UPDATE LOCALSTORAGE
+add_action( 'wp_footer', 'trigger_for_ajax_removed_from_cart' );
+function trigger_for_ajax_removed_from_cart() {
+    ?>
+        <script type="text/javascript">
+            (function($){
+                $('body').on( 'wc_fragments_refreshed', function(){
+                    // Testing output on browser JS console
+                    $('a.remove[data-product_id="194"]').on("click", function(e) {
+                        localStorage.removeItem('ordered_variants');
+                    });
+                    // Your code goes here
+                });
+            })(jQuery);
+        </script>
+    <?php
 }

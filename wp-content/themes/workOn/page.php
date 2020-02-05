@@ -102,8 +102,25 @@ $query = new WC_Product_Query( array(
 $burger_maker = $query->get_products()[0];
 $field = get_field_object('field_5e2ffcf74cb91');
 $fields_checked = get_field_objects($burger_maker->get_id())['skladniki']['value'];
+$first_three_items = array_slice($field['choices'], 0, 3);
+$last_three_items = array_slice($field['choices'], 3, );
 ?>
     <div class="burger_maker--container">
+
+        <!-- BURGER MAKER VISUALIZATION -->
+
+        <div class="burger_maker_visualization--container">
+            <img id="burger_top_graphic" src="<?php echo MEDIA . '/svg/burger_top.svg'; ?>" alt="burger_top">
+            <img id="green_graphic" src="<?php echo MEDIA . '/svg/green.svg'; ?>" alt="green" style="display: none;">
+            <img id="cucumbers_graphic" src="<?php echo MEDIA . '/svg/cucumbers.svg'; ?>" alt="cucumbers" style="display: none;">
+            <img id="tomatoes_graphic" src="<?php echo MEDIA . '/svg/tomatoes.svg'; ?>" alt="tomatoes" style="display: none;">
+            <img id="onion_rings_graphic" src="<?php echo MEDIA . '/svg/onion_rings.svg'; ?>" alt="onion_rings" style="display: none;">
+            <img id="cheese_graphic" src="<?php echo MEDIA . '/svg/cheese.svg'; ?>" alt="cheese">
+            <img id="meat_graphic" src="<?php echo MEDIA . '/svg/meat.svg'; ?>" alt="meat">
+            <img id="burger_bottom_graphic" src="<?php echo MEDIA . '/svg/burger_bottom.svg'; ?>" alt="burger_bottom">
+        </div>
+
+        <!-- END BURGER MAKER VISUALIZATION -->
 
         <!-- BURGER MAKER FORM -->
 
@@ -113,19 +130,64 @@ $fields_checked = get_field_objects($burger_maker->get_id())['skladniki']['value
                 <span>
                     <?php
                         if ($key === 0) {
-                            echo ' ' . $ingredient['value'];
-                        } else {
                             echo '-- ' . $ingredient['value'];
+                        } else {
+                            echo '-- ' . $ingredient['value'] . ' --';
                         }
                     ?>
                 </span>
             <?php endforeach; ?>
         </p>
 
-        <?php acf_form(array(
-            'id' => 'acf-form',
-            'post_id' => $burger_maker->get_id()
-        )); ?>
+        <ul>
+            <li>Składniki</li>
+            <li>
+                <ul>
+                    <li>
+                        <ul>
+                            <?php foreach($first_three_items as $key => $ingredient) : ?>
+                                <li>
+                                    <label for="<?php echo $key; ?>">
+                                        <input
+                                        name="<?php echo $key; ?>"
+                                        id="<?php echo $key; ?>"
+                                        type="checkbox"
+                                        <?php foreach($fields_checked as $arr) {
+                                            if (in_array($key, $arr)) {
+                                                echo 'checked';
+                                            };
+                                        } ?> >
+                                        <?php echo $ingredient; ?>
+                                    </label>
+                                    <div id="<?php echo 'thumbnail_' . $key; ?>"></div>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <?php foreach($last_three_items as $key => $ingredient) : ?>
+                                <li>
+                                    <label for="<?php echo $key; ?>">
+                                        <input
+                                        name="<?php echo $key; ?>"
+                                        id="<?php echo $key; ?>"
+                                        type="checkbox"
+                                        <?php foreach($fields_checked as $arr) {
+                                            if (in_array($key, $arr)) {
+                                                echo 'checked';
+                                            };
+                                        } ?> >
+                                        <?php echo $ingredient; ?>
+                                    </label>
+                                    <div id="<?php echo 'thumbnail_' . $key; ?>"></div>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
 
         <!-- END BURGER MAKER FORM -->
 
