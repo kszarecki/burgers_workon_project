@@ -26,7 +26,7 @@ $wc_query_reviews = new WP_Query($reviews);
                     <div class="burger_list_item_border--bottom"></div>
                     <div class="burger_list_item_border--left"></div>
                     <div class="burger_list_item_border--right"></div>
-                    <img src="<?php echo get_the_post_thumbnail_url($loop->post->ID); ?>" alt="burger_item_pic">
+                    <img src="<?php echo get_the_post_thumbnail_url($post->ID); ?>" alt="burger_item_pic">
                 </div>
                 <div class="burger_list_item--ranking d-flex justify-content-center align-items-center">
                     <?php

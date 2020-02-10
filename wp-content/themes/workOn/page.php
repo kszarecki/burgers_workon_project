@@ -103,7 +103,7 @@ $burger_maker = $query->get_products()[0];
 $field = get_field_object('field_5e2ffcf74cb91');
 $fields_checked = get_field_objects($burger_maker->get_id())['skladniki']['value'];
 $first_three_items = array_slice($field['choices'], 0, 3);
-$last_three_items = array_slice($field['choices'], 3, );
+$last_three_items = array_slice($field['choices'], 3, 6);
 ?>
     <div class="burger_maker--container">
 
