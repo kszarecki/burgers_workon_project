@@ -78,6 +78,26 @@ function add_custom_post_types() {
 }
 add_action('init', 'add_custom_post_types', 0);
 
+// POST REVIEW
+if(isset($_POST['submit_form'])){
+
+    header("Location: ".$_SERVER["HTTP_REFERER"]);
+
+    $new_review = array(
+        'post_type' => 'reviews',
+        'post_title' => 'opinia_użytkownika',
+        'post_content' => $_POST['review_content'],
+        'post_status' => 'publish',
+    );
+
+    $new_review_id = wp_insert_post($new_review);
+
+    update_post_meta($new_review_id, 'ranking', $_POST['review_ranking']);
+    update_post_meta($new_review_id, 'username', $_POST['review_username']);
+
+    die;
+}
+
 // REMOVE SHIPPING METHOD TITLE
 function remove_title_from_shipping_label($full_label, $method){
     return str_replace('Płaska Stawka: ', "", $full_label);

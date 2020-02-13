@@ -1,0 +1,14 @@
+2020-02-11T00:27:46+00:00 CRITICAL syntax error, unexpected '$new_review' (T_VARIABLE) w /var/www/html/burgers_workon_project/wp-content/themes/workOn/functions.php w linii 86
+
+2020-02-11T00:27:47+00:00 CRITICAL syntax error, unexpected '$new_review' (T_VARIABLE) w /var/www/html/burgers_workon_project/wp-content/themes/workOn/functions.php w linii 86
+
+2020-02-11T01:16:55+00:00 CRITICAL Uncaught Error: Object of class ReallySimpleCaptcha could not be converted to string in /var/www/html/burgers_workon_project/wp-content/themes/workOn/functions.php:89
+Stack trace:
+#0 /var/www/html/burgers_workon_project/wp-settings.php(497): include()
+#1 /var/www/html/burgers_workon_project/wp-config.php(90): require_once('/var/www/html/b...')
+#2 /var/www/html/burgers_workon_project/wp-load.php(37): require_once('/var/www/html/b...')
+#3 /var/www/html/burgers_workon_project/wp-blog-header.php(13): require_once('/var/www/html/b...')
+#4 /var/www/html/burgers_workon_project/index.php(17): require('/var/www/html/b...')
+#5 {main}
+  thrown w /var/www/html/burgers_workon_project/wp-content/themes/workOn/functions.php w linii 89
+

@@ -128,4 +128,21 @@ div.product > div.summary> form.cart {
     display: inherit!important;
 }
 
+// REVIEW FORM
+#wpforms-246 {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+// MINI_CART
+.woofc-item-qty,
+.woofc-item-remove {
+    display: none!important;
+}
+
+.grecaptcha-badge {
+    z-index: -10;
+}
+
 // END GLOBAL STYLES

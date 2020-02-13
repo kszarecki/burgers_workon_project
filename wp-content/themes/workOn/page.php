@@ -89,6 +89,17 @@
 
     <!-- END WHILE LOOP -->
 
+    <!-- FORM POST REVIEW -->
+    <form method='post' class='d-flex flex-column mx-auto mb-4' style='width: 90%;'>
+        <input class='mb-4' style='max-width: 280px;' type="text" name="review_username" placeholder='Imię i Nazwisko' required>
+        <label for='ranking' class='my-2'>Gwiazdki</label>
+        <input id='ranking' class='mb-4' style='max-width: 60px;' type="number" name="review_ranking" value="1" min="1" max="5" required>
+        <textarea class='mb-4' placeholder="Twoja opinia..."
+        name="review_content" style="resize: none;" rows="4" cols="50" required></textarea>
+        <button type='submit' name='submit_form' class='main_button my-4'>Dodaj opinię</button>
+    </form>
+    <!-- END FORM POST REVIEW -->
+
 <?php endif; ?>
 <!-- END DISPLAY REVIEWS -->
 
@@ -107,6 +118,7 @@ $last_three_items = array_slice($field['choices'], 3, 6);
 ?>
     <div class="burger_maker--container">
 
+        <div>
         <!-- BURGER MAKER VISUALIZATION -->
 
         <div class="burger_maker_visualization--container">
@@ -122,6 +134,7 @@ $last_three_items = array_slice($field['choices'], 3, 6);
 
         <!-- END BURGER MAKER VISUALIZATION -->
 
+        <div>
         <!-- BURGER MAKER FORM -->
 
         <p id='current_ingredients'>Wybrane składniki: 
@@ -190,6 +203,8 @@ $last_three_items = array_slice($field['choices'], 3, 6);
         </ul>
 
         <!-- END BURGER MAKER FORM -->
+        </div>
+        </div>
 
         <?php $id = $burger_maker-> get_id(); 
         echo do_shortcode(

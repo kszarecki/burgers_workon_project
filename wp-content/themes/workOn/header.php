@@ -19,7 +19,7 @@
 
 <header>
     <section>
-        <nav class='row d-flex justify-content-between align-items-center px-2 px-sm-4 m-0'>
+        <nav class='d-flex justify-content-between align-items-center'>
             <a href="<?php echo get_home_url();?>">
                 <img id="logo_icon" class='img-fluid' src="<?php echo MEDIA . '/svg/logo_icon.svg'; ?>" alt="logo">
                 <img id="logo_icon_mobile" class='img-fluid' src="<?php echo MEDIA . '/svg/logo_icon_mobile.svg'; ?>" alt="logo_mobile">

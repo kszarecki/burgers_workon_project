@@ -10,7 +10,20 @@
         top: calc(10px - 120px);
     }
 
-    & > div.burger_maker_visualization--container {
+    & > div:first-child {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (min-width: $breakpoints_sm) {
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
+    & > div > div.burger_maker_visualization--container {
         width: 85%;
         max-width: 500px;
         min-height: 300px;
@@ -18,6 +31,13 @@
         flex-flow: column nowrap;
         position: relative;
         margin: 2rem auto;
+
+        @media only screen and (min-width: $breakpoints_sm) {
+            width: 40%;
+            margin-left: 0;
+            position: sticky;
+            top: 200px;
+        }
 
         & > img {
             position: absolute;
@@ -72,7 +92,14 @@
         display: none;
     }
 
-    & > #current_ingredients {
+    & > div > div:last-child {
+        @media only screen and (min-width: $breakpoints_sm) {
+            width: 45%;
+        }
+    }
+
+    & > div > div > #current_ingredients {
+        max-width: 400px;
         font-size: 1.25rem;
         text-align: center;
 
@@ -81,11 +108,12 @@
         }
     }
 
-    & > ul {
+    & > div > div > ul {
         background: #FFF;
         border-radius: 5px;
         margin-top: 2rem;
         width: 100%;
+        max-width: 400px;
         list-style: none;
         padding: 0;
         display: flex;
@@ -111,18 +139,18 @@
                 justify-content: space-between;
                 flex-flow: column nowrap;
 
-                @media only screen and (min-width: $breakpoints_sm) {
-                    flex-flow: row nowrap;
-                }
+                // @media only screen and (min-width: $breakpoints_sm) {
+                //     flex-flow: row nowrap;
+                // }
 
                 & > li:nth-child(1),
                 & > li:nth-child(2) {
                     width: 100%;
 
-                    @media only screen and (min-width: $breakpoints_sm) {
-                        flex-flow: row nowrap;
-                        width: 48%;
-                    }
+                    // @media only screen and (min-width: $breakpoints_sm) {
+                    //     flex-flow: row nowrap;
+                    //     width: 48%;
+                    // }
 
                     & > ul {
                         list-style: none;
@@ -210,6 +238,12 @@
     & > .woocommerce-simple-add-to-cart,
         .simple_button {
         margin-top: 3.5rem!important;
+
+        @media only screen and (min-width: $breakpoints_sm) {
+            max-width: 255px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
         & > button {
             margin-bottom: 2rem!important;

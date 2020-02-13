@@ -16,13 +16,15 @@ const App = (function() {
         current_ingredients: [
             'ser',
             'wieprzowina'
-        ]
+        ],
+        window_width: window.innerWidth
     }
 
     self.init = function() {
         console.log('App is loaded');
 
         // ELEMENTS
+        const header_nav = document.querySelector('header > section > nav');
         const hamburger_icon = document.querySelector('#hamburger_icon');
         const close_icon = document.querySelector('#close_icon');
         const arrow_down_icon = document.querySelector('#arrow_down_icon');
@@ -41,7 +43,13 @@ const App = (function() {
         .find(el => el.textContent === 'ilość Własny burger');
         const order_comments = document.querySelector('textarea[name="order_comments"]');
 
+        if (window.scrollY > 0) {
+            self.handleHeaderNav(header_nav);
+        }
+
         // EVENTS
+        window.onresize = event => state.window_width = window.innerWidth;
+        window.onscroll = event => self.handleHeaderNav(header_nav);
         hamburger_icon.onclick = event => self.handleMenu(event, state);
         close_icon.onclick = event => self.handleMenu(event, state);
         arrow_down_icon.onclick = event => self.scrollToMain(event);
@@ -65,10 +73,7 @@ const App = (function() {
         }
 
         if (burger_maker_remove_btn) {
-
-            burger_maker_remove_btn.addEventListener('removed_from_cart', function(e) {
-                return self.handleRemoveOrderedVariants(event);
-            });
+            burger_maker_remove_btn.onclick = event => self.handleRemoveOrderedVariants(event);
         }
 
         if (burger_maker_quantity_box) {
@@ -84,6 +89,22 @@ const App = (function() {
                     `${item['title']}: ${item['ingredients']}`
                 ).join(' || ');
             }
+        }
+    }
+
+    self.handleHeaderNav = function(nav) {
+        if (window.scrollY > 0) {
+            nav.style.backgroundColor = '#1F0F0A';
+        } else {
+            nav.style.backgroundColor = 'transparent';
+        }
+
+        if (state.window_width > 1080 && window.scrollY > 0) {
+            nav.style.borderBottom = '10px solid #F49521';
+            nav.style.borderTop = '10px solid #F49521';
+        } else {
+            nav.style.borderBottom = '10px solid transparent';
+            nav.style.borderTop = '10px solid transparent';
         }
     }
 
