@@ -42,6 +42,9 @@ const App = (function() {
         const burger_maker_quantity_box = Array.from(document.querySelectorAll('label'))
         .find(el => el.textContent === 'ilość Własny burger');
         const order_comments = document.querySelector('textarea[name="order_comments"]');
+        const review_form_ranking = document.querySelector('#post_review_form > #ranking_input');
+        const review_empty_stars = document.querySelectorAll('#ranking_input > .star--empty');
+        const review_first_star = document.querySelector('#review_star--first');
 
         if (window.scrollY > 0) {
             self.handleHeaderNav(header_nav);
@@ -90,21 +93,25 @@ const App = (function() {
                 ).join(' || ');
             }
         }
+
+        if (review_form_ranking) {
+            review_empty_stars.forEach((item, index) => 
+                item.onclick = event => self.handleEmptyStar(event, review_empty_stars, index)
+            );
+
+            review_first_star.onclick = event => self.handleFirstStar(event, review_empty_stars)
+        }
     }
 
-    self.handleHeaderNav = function(nav) {
-        if (window.scrollY > 0) {
-            nav.style.backgroundColor = '#1F0F0A';
-        } else {
-            nav.style.backgroundColor = 'transparent';
-        }
+    self.handleHeaderNav = async function(nav) {
+        const header_section = document.querySelector('header > section');
 
-        if (state.window_width > 1080 && window.scrollY > 0) {
-            nav.style.borderBottom = '10px solid #F49521';
-            nav.style.borderTop = '10px solid #F49521';
+        if (window.scrollY > 0) {
+            await header_section.classList.add('before_nav');
+            nav.style.backgroundColor = await '#1F0F0A';
         } else {
-            nav.style.borderBottom = '10px solid transparent';
-            nav.style.borderTop = '10px solid transparent';
+            nav.style.backgroundColor = await 'transparent';
+            await header_section.classList.remove('before_nav');
         }
     }
 
@@ -204,6 +211,41 @@ const App = (function() {
     self.handleRemoveOrderedVariants = function(event) {
         console.log('remove variants');
         localStorage.removeItem('ordered_variants');
+    }
+
+    self.handleEmptyStar = function(event, elements, index) {
+        const conditional = event.target.classList.contains('star--full');
+        const ranking_input = document.querySelector('#ranking');
+        let range_add = [...elements].slice(0, index + 1);
+        let range_minus = [...elements].slice(index + 1, );
+
+        if (!conditional) {
+            range_add.forEach(item => {
+                item.classList.remove('star--empty');
+                item.classList.add('star--full');
+            });
+        } else {
+            range_minus.forEach((item) => {
+                item.classList.remove('star--full');
+                item.classList.add('star--empty');
+            })
+        }
+
+        const status = [...elements].filter(item => item.classList.contains('star--full')).length + 1;
+
+        ranking_input.value = status;
+
+    }
+
+    self.handleFirstStar = function(event, elements) {
+        const ranking_input = document.querySelector('#ranking');
+
+        [...elements].forEach(item => {
+            item.classList.remove('star--full');
+            item.classList.add('star--empty');
+        });
+
+        ranking_input.value = status;
     }
 
     return self;

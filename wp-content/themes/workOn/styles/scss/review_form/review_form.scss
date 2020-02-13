@@ -1,0 +1,26 @@
+#post_review_form {
+
+    & > input:first-child {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid $primary_black;
+        padding: 0.5rem;
+    }
+
+    & > input:focus,
+    & > textarea:focus {
+        outline: none;
+    }
+
+    & > input#ranking {
+        display: none;
+    }
+
+    & > textarea {
+        background: transparent;
+        padding: 0 0.5rem 0.5rem 0.5rem;
+        border: none;
+        border-left: 1px solid $primary_black;
+        border-bottom: 1px solid $primary_black;
+    }
+}

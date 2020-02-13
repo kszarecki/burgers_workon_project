@@ -93,6 +93,9 @@
     }
 
     & > div > div:last-child {
+        width: 100%;
+        min-width: 280px;
+        max-width: 400px;
         @media only screen and (min-width: $breakpoints_sm) {
             width: 45%;
         }
@@ -113,7 +116,6 @@
         border-radius: 5px;
         margin-top: 2rem;
         width: 100%;
-        max-width: 400px;
         list-style: none;
         padding: 0;
         display: flex;

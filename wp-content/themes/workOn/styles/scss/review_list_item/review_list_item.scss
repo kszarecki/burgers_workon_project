@@ -34,27 +34,6 @@
             font-weight: $font_bold;
             margin: 1.5rem auto;
         }
-
-        & > .review_list_item--ranking {
-            width: 100%;
-            height: 54px;
-            background: $primary_black;
-
-            & > div.star--full,
-            & > div.star--empty {
-                width: 21.48px;
-                height: 20.57px;
-                margin: 0 3.5px;
-            }
-
-            & > div.star--full {
-                background: url('../../media/svg/star_full.svg') no-repeat center center / contain;
-            }
-
-            & > div.star--empty {
-                background: url('../../media/svg/star_empty.svg') no-repeat center center / contain;
-            }
-        }
     }
 
     & > .review_list_quote--container {
@@ -122,4 +101,25 @@
             }
         }
     }
+}
+
+.review_list_item--ranking {
+    width: 100%;
+    height: 54px;
+    background: $primary_black;
+}
+
+div.star--full,
+div.star--empty {
+    width: 21.48px;
+    height: 20.57px;
+    margin: 0 3.5px;
+}
+
+div.star--full {
+    background: url('../../media/svg/star_full.svg') no-repeat center center / contain;
+}
+
+div.star--empty {
+    background: url('../../media/svg/star_empty.svg') no-repeat center center / contain;
 }

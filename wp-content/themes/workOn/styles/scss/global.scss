@@ -77,6 +77,7 @@ body {
 @import "./cart/cart";
 @import "./checkout/checkout";
 @import "./thank_you/thank_you";
+@import "./review_form/review_form";
 @import "./contact_form/contact_form";
 @import "./burger_maker/burger_maker";
 @import "./footer/footer";
@@ -143,6 +144,30 @@ div.product > div.summary> form.cart {
 
 .grecaptcha-badge {
     z-index: -10;
+}
+
+.woocommerce-input-wrapper {
+    & > input {
+        background: transparent!important;
+        border: none;
+        border-bottom: 1px solid $primary_black;
+        padding: 0.5rem;
+        max-width: 400px;
+    }
+
+    & > input:focus,
+    & > textarea:focus {
+        outline: none;
+    }
+
+    & > textarea {
+        background: transparent;
+        padding: 0 0.5rem 0.5rem 0.5rem;
+        border: none;
+        border-left: 1px solid $primary_black;
+        border-bottom: 1px solid $primary_black;
+        resize: none;
+    }
 }
 
 // END GLOBAL STYLES

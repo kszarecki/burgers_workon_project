@@ -87,7 +87,7 @@ if(isset($_POST['submit_form'])){
         'post_type' => 'reviews',
         'post_title' => 'opinia_użytkownika',
         'post_content' => $_POST['review_content'],
-        'post_status' => 'publish',
+        'post_status' => 'draft',
     );
 
     $new_review_id = wp_insert_post($new_review);

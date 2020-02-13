@@ -1,7 +1,7 @@
 #wpforms-192,
 .wpforms-container,
 .wpforms-container-full {
-    width: 90%;
+    width: calc(100% - 20px);
     max-width: 900px;
     margin: 0 auto 2rem auto;
     position: relative;
@@ -34,5 +34,35 @@
                 align-items: center;
             }
         }
+    }
+}
+
+.wpforms-field-name-last,
+.wpforms-field-name-first,
+input[type='email'].wpforms-field-medium {
+    background: transparent!important;
+    padding: 0.5rem!important;
+
+    border: none!important;
+    border-bottom: 1px solid $primary_light_brown!important;
+    color: $primary_light_brown!important;
+
+    &::placeholder {
+        color: $primary_light_brown!important;
+    }
+}
+
+textarea.wpforms-field-medium {
+    background: transparent!important;
+    padding: 0 0.5rem 0.5rem 0.5rem!important;
+    border: none!important;
+    border-left: 1px solid $primary_light_brown!important;
+    border-bottom: 1px solid $primary_light_brown!important;
+    resize: none!important;
+    margin-top: 1rem!important;
+    color: $primary_light_brown!important;
+
+    &::placeholder {
+        color: $primary_light_brown!important;
     }
 }

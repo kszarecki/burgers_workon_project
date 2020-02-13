@@ -90,9 +90,17 @@
     <!-- END WHILE LOOP -->
 
     <!-- FORM POST REVIEW -->
-    <form method='post' class='d-flex flex-column mx-auto mb-4' style='width: 90%;'>
+    <form id='post_review_form' method='post' class='d-flex flex-column mx-auto mb-4' style='width: 90%;'>
         <input class='mb-4' style='max-width: 280px;' type="text" name="review_username" placeholder='Imię i Nazwisko' required>
         <label for='ranking' class='my-2'>Gwiazdki</label>
+        <div id="ranking_input" class="d-flex align-items-center"
+        style="margin: 0.5rem 0 1.5rem 0; max-width: 144px; background: transparent;">
+            <div id="review_star--first" class="star--full"></div>
+            <div class="star--empty" style="cursor: pointer;"></div>
+            <div class="star--empty" style="cursor: pointer;"></div>
+            <div class="star--empty" style="cursor: pointer;"></div>
+            <div class="star--empty" style="cursor: pointer;"></div>
+        </div>
         <input id='ranking' class='mb-4' style='max-width: 60px;' type="number" name="review_ranking" value="1" min="1" max="5" required>
         <textarea class='mb-4' placeholder="Twoja opinia..."
         name="review_content" style="resize: none;" rows="4" cols="50" required></textarea>

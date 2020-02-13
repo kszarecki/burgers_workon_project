@@ -21,10 +21,9 @@ header {
         left: 0;
         margin: 0 auto;
         z-index: 999;
-        transition: all 0.6s ease-in-out 0.00001s;
-        border-bottom: 10px solid transparent;
-        border-top: 10px solid transparent;
+        transition: background-color 0.4s ease-in-out 0.00001s;
         padding: 0 1.5rem;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
 
         @media only screen and (min-width: $breakpoints_xs) {
             padding: 0 2rem;
@@ -42,6 +41,7 @@ header {
         @media only screen and (min-width: 1081px) {
             max-width: 960px;
             padding: 0 1.5rem;
+            box-shadow: none;
         }
 
         & > div > img {
@@ -183,5 +183,22 @@ header {
             animation: bounce_arrow 4s 0.5s infinite ease;
         }
 
+    }
+}
+
+.before_nav {
+    @media only screen and (min-width: 1081px) {
+        &:before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            z-index: 1;
+            background-color: $primary_black;
+            transition: background-color 0.4s ease-in-out 0.00001s;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+        }
     }
 }
